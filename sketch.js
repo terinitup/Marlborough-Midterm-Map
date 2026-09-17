@@ -1,5 +1,6 @@
 let squares=[];
 let isDown=false;
+let img=null;
 
 let TopY;
 let BottomY;
@@ -17,8 +18,13 @@ let data = {
 	9:"Georgia"
 }
 
-function setup() {
+
+
+async function setup() {
+	img  = await loadImage('Usa.svg.webp');
+	
   createCanvas(1200, 700);
+ 
   TopY=height/6;
   BottomY=random(height / 2, height - 50);
   //squares.push(new Square(width/6, TopY, 30));
@@ -37,15 +43,16 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
+  
+  if (img)
+	image(img, 25, 25, 50, 50);
 
   
    for (let s of squares){
 	s.shift();
 	s.display();
 	}
-	
-	 
 
 }
 		 
