@@ -43,11 +43,10 @@ async function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0);
   
   if (img)
-	image(img, 25, 25, 50, 50);
-
+	image(img, 0, 0);
   
    for (let s of squares){
 	s.shift();
