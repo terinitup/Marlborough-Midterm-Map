@@ -1,6 +1,7 @@
 let squares=[];
 let isDown=false;
 let img=null;
+let scaleFactor=1.3;
 
 let TopY;
 let BottomY;
@@ -21,9 +22,10 @@ let data = {
 
 
 async function setup() {
-	img  = await loadImage('Usa.svg.webp');
+	img  = await loadImage('USOutline.svg');
+	imageMode(CENTER)
 	
-  createCanvas(1200, 700);
+  createCanvas(windowWidth, windowHeight);
  
   TopY=height/6;
   BottomY=random(height / 2, height - 50);
@@ -43,10 +45,10 @@ async function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
   
   if (img)
-	image(img, 0, 0);
+	image(img, width/2, height/2, img.width * scaleFactor, img.height * scaleFactor);
   
    for (let s of squares){
 	s.shift();
