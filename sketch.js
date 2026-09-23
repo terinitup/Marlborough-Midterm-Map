@@ -1,6 +1,7 @@
 let squares=[];
 let isDown=false;
 let img=null;
+let scaleFactor=1.3;
 
 let TopY;
 let BottomY;
@@ -47,7 +48,7 @@ function draw() {
   background(255);
   
   if (img)
-	image(img, width/2, height/2);
+	image(img, width/2, height/2, img.width * scaleFactor, img.height * scaleFactor);
   
    for (let s of squares){
 	s.shift();
