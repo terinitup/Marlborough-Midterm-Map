@@ -44,26 +44,33 @@ async function setup() {
   
 }
 
-function draw() {
-  background(255);
-  
-  if (img)
-	image(img, width/2, height/2, img.width * scaleFactor, img.height * scaleFactor);
-  
-   for (let s of squares){
-	s.shift();
-	s.display();
-	}
-
+function transform_coordinates(p) {
+    // map latitude/longitude to rect(0, 0, width, height)
+    const x1 = -127;
+    const x2 = -66;
+    const y1 = 25;
+    const y2 = 50;
+    return [map(p[0], x1, x2, 0, width),
+            map(p[1], y1, y2, height, height/8)]
 }
 		 
+function draw_state(name) {
 
+    polygons = state_data[name];
 
+    for (let polygon of polygons) {
+        beginShape();
+        for (let point of polygon) {
+            q = transform_coordinates(point); 
+            vertex(q[0], q[1]);
+        }
+        endShape();
+    }
+
+}
 
 function mousePressed(){
 	isDown = !isDown;
-	
-	
 	
 	let targetY;
 	if(isDown){
@@ -84,6 +91,27 @@ function mousePressed(){
 		s.setTarget(s.pos.x, targetY);
 
 		}
+}
+
+function draw() {
+  background(255);
+
+    noFill();
+
+    for (let state in state_data) {
+        stroke(0);
+        draw_state(state);
+    }
+
+  
+//   if (img)
+// 	image(img, width/2, height/2, img.width * scaleFactor, img.height * scaleFactor);
+  
+//    for (let s of squares){
+// 	s.shift();
+// 	s.display();
+// 	}
+
 }
 	//for (let i = 0; i < squares.length; i += 1) {
     //squares[i].setTarget(squares[i].pos.x, targetY);
