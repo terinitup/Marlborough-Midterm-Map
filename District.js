@@ -5,8 +5,8 @@ class District {
         this.seatPosition = seatPosition;
         this.position = mapPosition;
             this.size = size;
-            this.t = 0;
             this.fill = fill;
+            this.t = 0;
     }
 
     display(){
@@ -15,7 +15,14 @@ class District {
     }
 
     hover(){
-
+        if(mouseX > this.position.x && mouseX < this.position.x + this.size &&
+           mouseY > this.position.y && mouseY < this.position.y + this.size) {
+            return true;
+        }
+        else{
+            return false;
+        }
+        
     }
 
     moveToSenate(){
