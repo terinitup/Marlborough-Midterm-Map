@@ -1,4 +1,5 @@
 let squares=[];
+let districts = [];
 let isDown=false;
 let img=null;
 let scaleFactor=1.3;

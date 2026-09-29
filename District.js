@@ -1,10 +1,10 @@
 class District {
-    constructor(ID, mapPosition, seatPosition, fill, size) {
+    constructor(ID, mapPosition, seatPosition, fill) {
         this.ID = ID;
         this.mapPosition = mapPosition;
         this.seatPosition = seatPosition;
         this.position = mapPosition;
-            this.size = size;
+            this.size = 5;
             this.fill = fill;
             this.t = 0;
     }
