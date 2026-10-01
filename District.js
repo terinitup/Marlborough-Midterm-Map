@@ -14,6 +14,11 @@ class District {
         noStroke();
         fill(this.fill);
         rect(this.position.x, this.position.y, this.size, this.size);
+        if (this.hover()){
+            text(this.ID, this.position.x, this.position.y - 10);
+            stroke(0);
+            strokeWeight(2);
+	    }
     }
 
     hover(){

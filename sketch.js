@@ -63,15 +63,17 @@ function draw() {
 
     for (let state in state_data) {
         stroke(0);
+        strokeWeight(1);
         draw_state(state);
     }
 
     for (let state in allDistricts){
         for (let d of allDistricts[state]){
             d.display();
-            if(d.hover()){
-                text(d.ID, d.position.x, d.position.y - 10);
-            }
+                if (d.hover()){
+                    noStroke();
+                    text(d.ID, d.position.x, d.position.y - 10);
+                }
         }
     }
 }
