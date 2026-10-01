@@ -1,17 +1,19 @@
 class District {
-    constructor(ID, mapPosition, seatPosition, fill) {
+    constructor(ID, stateName, mapPosition, seatPosition, fill) {
         this.ID = ID;
+        this.stateName = stateName; 
         this.mapPosition = mapPosition;
         this.seatPosition = seatPosition;
         this.position = mapPosition;
-            this.size = 5;
+            this.size = width/130;
             this.fill = fill;
             this.t = 0;
     }
 
     display(){
-        rect(this.position.x, this.position.y, this.size, this.size);
+        noStroke();
         fill(this.fill);
+        rect(this.position.x, this.position.y, this.size, this.size);
     }
 
     hover(){
@@ -26,7 +28,7 @@ class District {
     }
 
     moveToSenate(){
-
+        
     }
 
     moveToMap(){
