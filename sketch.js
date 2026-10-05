@@ -1,48 +1,33 @@
 let squares=[];
 let districts = [];
-let isDown=false;
-let img=null;
-let scaleFactor=1.3;
+const allDistricts = {};
 
-let TopY;
-let BottomY;
 
 let data = {
-	0: "Alabama",
-	1:"Alaska",
-	2: "Arizona",
-	3: "Arkansas",
-	4: "California",
-	5: "Colorado",
-	6: "Conneticut",
-	7: "Deleware",
-	8: "Florida",
-	9:"Georgia"
+	0: "One",
+	1: "Two",
+	2: "Three",
+	3: "Four",
+	4: "Five",
+	5: "Six",
+	6: "Seven",
+	7: "Eight",
+	8: "Nine",
+	9: "Ten"
 }
 
+function createDistricts(){
+    for (let state in rectangle_list){
+        allDistricts[state] = rectangle_list[state].makeDistricts();
+    }
+}
 
+function setup() {
 
-async function setup() {
-	img  = await loadImage('USOutline.svg');
-	imageMode(CENTER)
-	
   createCanvas(windowWidth, windowHeight);
- 
-  TopY=height/6;
-  BottomY=random(height / 2, height - 50);
-  //squares.push(new Square(width/6, TopY, 30));
-  
-   for (let col = 0; col <10; col++){
-	for (let row = 0; row<1; row++){
-		
-		let x = 80 + col*80;
-		let y = TopY + row*50;
-		let id = data[col];
-		squares.push(new Square(x, y, 50, id))
+  initRectangleList()
+  createDistricts();
 
-	}
-  }
-  
 }
 
 function transform_coordinates(p) {
@@ -70,29 +55,6 @@ function draw_state(name) {
 
 }
 
-function mousePressed(){
-	isDown = !isDown;
-	
-	let targetY;
-	if(isDown){
-		targetY=BottomY;
-		for(let s of squares){
-		s.changeColor(232, 27, 35);
-
-		}
-		}else{
-			targetY=TopY;
-			for(let s of squares){
-		s.changeColor(0, 174, 243);
-
-		}
-		}
-	
-	for(let s of squares){
-		s.setTarget(s.pos.x, targetY);
-
-		}
-}
 
 function draw() {
   background(255);
@@ -101,23 +63,18 @@ function draw() {
 
     for (let state in state_data) {
         stroke(0);
+        strokeWeight(1);
         draw_state(state);
     }
 
-  
-//   if (img)
-// 	image(img, width/2, height/2, img.width * scaleFactor, img.height * scaleFactor);
-  
-//    for (let s of squares){
-// 	s.shift();
-// 	s.display();
-// 	}
-
+    for (let state in allDistricts){
+        for (let d of allDistricts[state]){
+            d.display();
+                if (d.hover()){
+                    noStroke();
+                    text(d.ID, d.position.x, d.position.y - 10);
+                }
+        }
+    }
 }
-	//for (let i = 0; i < squares.length; i += 1) {
-    //squares[i].setTarget(squares[i].pos.x, targetY);
-	
-	
-	//for (let i = 0; i<vectors.length; i++){
-	//	vectors[i].setTarget(vectors[i].pos.x, targetY);
 		 
