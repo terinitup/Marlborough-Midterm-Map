@@ -1,13 +1,14 @@
 class InformationBox{
-	constructor(x, y, state, districtNum, candidates, w=220){
+	constructor(x, y, state, districtNum, candidates){
 		this.x = x;
 		this.y=y;
-		this.w=w;
+		this.w=220;
+		this.h=130;
 		
 		this.state = state;
 		this.districtNum=districtNum;
 		this.candidates=candidates;
-		this.h=130;
+		
 	}
 	
 	leader(){
