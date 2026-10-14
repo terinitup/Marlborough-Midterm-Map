@@ -1,17 +1,20 @@
 class Rectangle{
-    constructor(xStart, yStart, rowCount, districtNum, stateName){
+    constructor(xStart, yStart, columnCount, districtNum, stateName, shiftVal){
         this.xStart = xStart;
         this.yStart = yStart;
-        this.rowCount = rowCount;
-        this.distance = width/90;
+        this.columnCount = columnCount;
+        this.distance = mapWidth/80;
         this.districtNum = districtNum;
         this.stateName = stateName;
+        this.shiftVal = shiftVal;
         this.id = 1;
     }
 
     findPosition(tempI){
-        return createVector(this.xStart + (tempI%this.rowCount) * this.distance,
-                      this.yStart + int(tempI/this.rowCount) * this.distance);
+        let j = int(tempI%this.columnCount);
+        let i = int(tempI/this.columnCount);
+        return createVector(this.xStart + j * this.distance + (i*this.shiftVal),
+                      this.yStart + i * this.distance);
     }
 
     makeDistricts(){

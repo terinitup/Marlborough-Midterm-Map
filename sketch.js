@@ -3,6 +3,8 @@ const allDistricts = {};
 let district_data;
 
 
+
+
 let data = {
 	0: "One",
 	1: "Two",
@@ -40,8 +42,8 @@ function transform_coordinates(p) {
     const x2 = -66;
     const y1 = 25;
     const y2 = 50;
-    return [map(p[0], x1, x2, 0, width),
-            map(p[1], y1, y2, height, height/8)]
+    return [map(p[0], x1, x2, 0, mapWidth),
+            map(p[1], y1, y2, mapHeight, mapHeight/6)]
 }
 		 
 function draw_state(name) {
@@ -95,6 +97,6 @@ function draw() {
 			
 		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates);
 		box.display();
-}
+    }
 }
 
