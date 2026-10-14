@@ -2,7 +2,7 @@ class InformationBox{
 	constructor(x, y, state, districtNum, candidates){
 		this.x = x;
 		this.y=y;
-		this.w=220;
+		this.w=300;
 		this.h=130;
 		
 		this.state = state;
@@ -45,11 +45,16 @@ class InformationBox{
 		fill(0);
 		textAlign(LEFT, TOP);
 		textSize(16);
-		text(this.state + " District " + this.districtNum, this.x + 10, this.y +14);
+		textFont('Serif');
+		 textStyle(BOLD);
+		text(this.state.toUpperCase() + " DISTRICT " + this.districtNum, this.x + 10, this.y +14);
+		
 		
 		//Candidates
 		for(let i = 0; i <this.candidates.length; i++){
 			let c = this.candidates[i];
+					 textStyle(NORMAL);
+
 			text(c.name + " | " + c.party, this.x +10, this.y + 40 + i*20);
 			
 		}	
