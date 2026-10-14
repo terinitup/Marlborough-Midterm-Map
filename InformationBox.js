@@ -6,7 +6,8 @@ class InformationBox{
 		
 		this.state = state;
 		this.districtNum=districtNum;
-		this.candidates=[];
+		this.candidates=candidates;
+		this.h=130;
 	}
 	
 	leader(){
@@ -43,7 +44,7 @@ class InformationBox{
 		fill(0);
 		textAlign(LEFT, TOP);
 		textSize(16);
-		text(this.state = " District " + this.districtNum, this.x + 10, this.y +14);
+		text(this.state + " District " + this.districtNum, this.x + 10, this.y +14);
 		
 		//Candidates
 		for(let i = 0; i <this.candidates.length; i++){

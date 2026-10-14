@@ -76,5 +76,23 @@ function draw() {
                 }
         }
     }
+    
+    //for information box
+    
+    let hovered = null;
+    for (let s of squares){
+		s.shift();
+		s.display();
+		if (s.hover()){
+			hovered = s;
+		}
+	}
+	
+	if(hovered){
+		let info = CA_district_data[hovered.id];
+		let candidates = [];
+		
+		if(info){
+			candidates=info.can
 }
 		 
