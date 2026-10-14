@@ -96,8 +96,8 @@ function draw() {
 			candidates=info.candidates;
 		}
 		
-		let box = new InformationBox(mouse X + 15, mouseY + 15, "California", hovered.id, candidates);
+		let box = new InformationBox(mouseX + 15, mouseY + 15, "California", hovered.id, candidates);
 		box.display();
 }
 }
-}
+
