@@ -95,4 +95,5 @@ function draw() {
 		if(info){
 			candidates=info.can
 }
-		 
+}
+}
