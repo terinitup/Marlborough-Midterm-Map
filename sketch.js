@@ -93,7 +93,11 @@ function draw() {
 		let candidates = [];
 		
 		if(info){
-			candidates=info.can
+			candidates=info.candidates;
+		}
+		
+		let box = new InformationBox(mouse X + 15, mouseY + 15, "California", hovered.id, candidates);
+		box.display();
 }
 }
 }
