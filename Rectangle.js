@@ -3,7 +3,7 @@ class Rectangle{
         this.xStart = xStart;
         this.yStart = yStart;
         this.columnCount = columnCount;
-        this.distance = mapWidth/80;
+        this.distance = mapWidth/105;
         this.districtNum = districtNum;
         this.stateName = stateName;
         this.shiftVal = shiftVal;

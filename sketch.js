@@ -43,17 +43,38 @@ function transform_coordinates(p) {
     const y1 = 25;
     const y2 = 50;
     return [map(p[0], x1, x2, 0, mapWidth),
-            map(p[1], y1, y2, mapHeight, mapHeight/6)]
+            map(p[1], y1, y2, mapHeight/1.1, mapHeight/6)]
 }
+
+function alaska_coordinates(p) {
+    // map latitude/longitude to rect(0, 0, width, height)
+    const x1 = -168;
+    const x2 = 179;
+    const y1 = 51;
+    const y2 = 65;
+    return [map(p[0], x1, x2, mapWidth/11, mapWidth*1.2),
+            map(p[1], y1, y2, mapHeight, mapHeight/1.17)]
+}
+
+function hawaii_coordinates(p) {
+    // map latitude/longitude to rect(0, 0, width, height)
+    const x1 = -161;
+    const x2 = -154;
+    const y1 = 18;
+    const y2 = 23;
+    return [map(p[0], x1, x2, mapWidth/4.2, mapWidth/2.57),
+            map(p[1], y1, y2, mapHeight, mapHeight/1.17)]
+}
+
 		 
-function draw_state(name) {
+function draw_state(name, transformFunction) {
 
     polygons = state_data[name];
 
     for (let polygon of polygons) {
         beginShape();
         for (let point of polygon) {
-            q = transform_coordinates(point); 
+            q = transformFunction(point); 
             vertex(q[0], q[1]);
         }
         endShape();
@@ -70,9 +91,14 @@ function draw() {
     for (let state in state_data) {
         stroke(0);
         strokeWeight(1);
-        draw_state(state);
+        draw_state(state, transform_coordinates);
     }
-    
+
+        stroke(0);
+        strokeWeight(1);
+        draw_state("Alaska", alaska_coordinates);    
+        draw_state("Hawaii", hawaii_coordinates);
+
     let hovered = null;
 
     for (let state in allDistricts){

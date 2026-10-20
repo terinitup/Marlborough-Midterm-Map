@@ -5,7 +5,7 @@ class District {
         this.mapPosition = mapPosition;
         this.seatPosition = seatPosition;
         this.position = mapPosition;
-            this.size = width/160;
+            this.size = mapWidth/130;
             this.fill = fill;
             this.t = 0;
     }
