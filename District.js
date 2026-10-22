@@ -1,9 +1,8 @@
 class District {
-    constructor(ID, stateName, mapPosition, seatPosition, fill) {
+    constructor(ID, stateName, mapPosition, seatPosition, fill, decParty) {
         this.ID = ID;
         this.stateName = stateName; 
         this.mapPosition = mapPosition;
-        this.seatPosition = seatPosition;
         this.position = mapPosition;
             this.size = mapWidth/130;
             this.fill = fill;
