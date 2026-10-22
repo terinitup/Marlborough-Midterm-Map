@@ -22,7 +22,7 @@ class Rectangle{
         let districts = [];
         
         for(let i = 0; i < this.districtNum; i++){
-            districts.push(new District(this.id, this.stateName, this.findPosition(i), this.findPosition(i), color(0, 174, 243)));
+            districts.push(new District(this.id, this.stateName, this.findPosition(i), this.findPosition(i)));
             this.id++;
         }
 
