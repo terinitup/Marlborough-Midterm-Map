@@ -110,15 +110,30 @@ function draw() {
         }
     }
     
-    //for information box
+    //drawing the abbreviations
+    
+    fill(0);
+    noStroke();
+    textFont("Serif");
+    textSize(14);
+    textAlign(LEFT, BOTTOM);
+    
+    for(let state in allDistricts){
+		let first = allDistricts[state][0]; 		
+		text (stateMeta_data[state].abbreviation, first.position.x, first.position.y -4);
+	}
+    
   
 	
 	if(hovered){
 		let candidates = [];
+		let tossup = false;
 		let stateData = district_data[hovered.stateName];
 		
 		if (stateData && stateData[hovered.ID]){
         candidates = stateData[hovered.ID].candidates;
+        if(stateData[hovered.ID].tossup){
+			}
 		}
 			
 		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates);
