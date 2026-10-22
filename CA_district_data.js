@@ -2,6 +2,7 @@ let CA_district_data =
 {
 	1 : {
 		population: 759259,
+		tossup: true,
 		candidates: [
 			{name: "James Gallagher", party: "Republican"},
 			{name: "Mike McGuire", party: "Democrat"}
