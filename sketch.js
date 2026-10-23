@@ -89,7 +89,7 @@ function draw() {
     noFill();
 
     for (let state in state_data) {
-        stroke(0);
+        stroke(150, 150, 150);
         strokeWeight(1);
         draw_state(state, transform_coordinates);
     }
@@ -118,9 +118,78 @@ function draw() {
     textSize(14);
     textAlign(LEFT, BOTTOM);
     
+    
     for(let state in allDistricts){
-		let first = allDistricts[state][0]; 		
-		text (stateMeta_data[state].abbreviation, first.position.x, first.position.y -4);
+		let first = allDistricts[state][0]; 	
+		let last = allDistricts[state][allDistricts[state].length - 1];
+	
+		let r = rectangle_list[state];
+		
+		let top = first.position.y;
+		let bottom = last.position.y + last.size;
+		
+		let left = first.position.x;
+        let right = left + (min(r.columnCount, r.districtNum) - 1) * r.distance + first.size;
+		
+		if (stateMeta_data[state].label == "left"){
+			textAlign(RIGHT, TOP);
+			text(stateMeta_data[state].abbreviation, left-3, top);
+		
+		} else if(stateMeta_data[state].label=="right"){
+			textAlign(LEFT, TOP);
+			text(stateMeta_data[state].abbreviation, right +4, top);
+			
+		}else if(stateMeta_data[state].abbreviation=="NY"){
+			textAlign(CENTER, BOTTOM);
+			text(stateMeta_data[state].abbreviation, right-15, top-1);
+			
+		}else if(stateMeta_data[state].abbreviation=="WV"){
+			textAlign(CENTER, TOP);
+			text(stateMeta_data[state].abbreviation, left-1, bottom+1);
+			
+		}else if(stateMeta_data[state].abbreviation=="OH"){
+			textAlign(CENTER, BOTTOM);
+			text(stateMeta_data[state].abbreviation, left-1, top+1);
+			
+		}else if(stateMeta_data[state].abbreviation=="PA"){
+			textAlign(RIGHT, TOP);
+			text(stateMeta_data[state].abbreviation, left-3, top);
+			
+		}else if(stateMeta_data[state].abbreviation=="IN"){
+			textAlign(CENTER, BOTTOM);
+			text(stateMeta_data[state].abbreviation, (left +right)/2, top+1);
+
+		}else if(stateMeta_data[state].abbreviation=="FL"){
+			textAlign(RIGHT, TOP);
+			text(stateMeta_data[state].abbreviation, left-25, top-15);
+		}else if(stateMeta_data[state].abbreviation=="VT"){
+			textAlign(CENTER, BOTTOM);
+			text(stateMeta_data[state].abbreviation, (left +(right+3))/2, top);
+			
+		}else if(stateMeta_data[state].abbreviation=="VA"){
+			textAlign(CENTER, BOTTOM);
+			text(stateMeta_data[state].abbreviation, (left +right)/2, top);
+		
+		}else if(stateMeta_data[state].abbreviation=="CT"){
+			textAlign(CENTER, TOP);
+			text(stateMeta_data[state].abbreviation, right+3, bottom-7);
+			
+		}else if(stateMeta_data[state].abbreviation=="MD"){
+			textAlign(CENTER, TOP);
+			text(stateMeta_data[state].abbreviation, right-5, bottom+2);
+		}else if(stateMeta_data[state].abbreviation=="NJ"){
+			textAlign(LEFT, TOP);
+			text(stateMeta_data[state].abbreviation, right +4, top+10);
+
+		}else if(stateMeta_data[state].label=="bottom"){
+			textAlign(CENTER, TOP);
+			text(stateMeta_data[state].abbreviation, (left +right)/2, bottom+2);
+
+		}
+		else{
+			textAlign(CENTER, BOTTOM);
+			text(stateMeta_data[state].abbreviation, (left +right)/2, top-2);
+		}
 	}
     
   
@@ -133,10 +202,11 @@ function draw() {
 		if (stateData && stateData[hovered.ID]){
         candidates = stateData[hovered.ID].candidates;
         if(stateData[hovered.ID].tossup){
+			tossup = true;
 			}
 		}
 			
-		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates);
+		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup);
 		box.display();
     }
 }

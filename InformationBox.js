@@ -2,8 +2,8 @@ class InformationBox{
 	constructor(x, y, state, districtNum, candidates, tossup){
 		this.x = x;
 		this.y=y;
-		this.w=380;
-		this.h=160;
+		this.w=300;
+		this.h=150;
 		
 		this.state = state;
 		this.districtNum=districtNum;
@@ -66,17 +66,18 @@ class InformationBox{
 		text(this.state.toUpperCase() + " DISTRICT " + this.districtNum, this.x + 10, this.y +16);
 		
 		// "AP certified results" in the top riht 
-		textFont("Arial");
-		textSize(12);
-		textAlign(RIGHT, TOP);
-		textStyle(NORMAL);
-		fill(120);
-		text("AP certified results", this.x + this.w -12, this.y+18);
-		textAlign(LEFT, TOP);
+		//textFont("Arial");
+		//textSize(12);
+		//textAlign(RIGHT, TOP);
+		//textStyle(NORMAL);
+		//fill(120);
+		//text("AP certified results", this.x + this.w -5, this.y+this.h-15);
+		//textAlign(LEFT, TOP);
 		
 		//Toss-up note
 		if (this.tossup){
 			fill(133, 79, 11);
+			textSize(13);
 			text("* Toss-up race", this.x+12, this.y+38);
 		}
 		
