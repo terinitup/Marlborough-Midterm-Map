@@ -1,2277 +1,6885 @@
-const data = {
+const district_data = {
   "Alabama": {
     "1": {
-      "Candidates": "Clyde Jones Jr., Jerry Carl",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Clyde Jones Jr.",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jerry Carl",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Shomari Figures, Rhett Marques",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Shomari Figures",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rhett Marques",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Lee McInnis, Mike Rogers",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lee McInnis",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Rogers",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Amanda Pusczek, Robert Aderholt",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Amanda Pusczek",
+          "party": "Democratic"
+        },
+        {
+          "name": "Robert Aderholt",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Andrew Sneed, Dale Strong",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Andrew Sneed",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dale Strong",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Maurice Mercer, Gary Palmer",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maurice Mercer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Gary Palmer",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Terri Sewell, Ammie Akin",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Terri Sewell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ammie Akin",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Alaska": {
     "1": {
-      "Candidates": "Eric Hafner, Nick Begich III, Bill Hill, Jim McDermott",
-      "Party": "Democratic, Republican, Independent, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eric Hafner",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nick Begich III",
+          "party": "Republican"
+        },
+        {
+          "name": "Bill Hill",
+          "party": "Independent"
+        },
+        {
+          "name": "Jim McDermott",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Arizona": {
     "1": {
-      "Candidates": "Amish Shah, Jay Feely, Monica Alponte",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Amish Shah",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jay Feely",
+          "party": "Republican"
+        },
+        {
+          "name": "Monica Alponte",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Jonathan Nez, Eli Crane, Curtis Goodwin",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jonathan Nez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eli Crane",
+          "party": "Republican"
+        },
+        {
+          "name": "Curtis Goodwin",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Yassamin Ansari, Alan Aversa, David Redkey",
-      "Party": "Democratic, No Labels, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Yassamin Ansari",
+          "party": "Democratic"
+        },
+        {
+          "name": "Alan Aversa",
+          "party": "No Labels"
+        },
+        {
+          "name": "David Redkey",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Greg Stanton, Zuhdi Jasser, Tisha Benoit",
-      "Party": "Democratic, Republican, No Labels",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Greg Stanton",
+          "party": "Democratic"
+        },
+        {
+          "name": "Zuhdi Jasser",
+          "party": "Republican"
+        },
+        {
+          "name": "Tisha Benoit",
+          "party": "No Labels"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Elizabeth Lee, Mark Lamb",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Elizabeth Lee",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mark Lamb",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "JoAnna Mendoza, Juan Ciscomani, Jereme Peters, Gary Swing",
-      "Party": "Democratic, Republican, Libertarian, Green",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "JoAnna Mendoza",
+          "party": "Democratic"
+        },
+        {
+          "name": "Juan Ciscomani",
+          "party": "Republican"
+        },
+        {
+          "name": "Jereme Peters",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Gary Swing",
+          "party": "Green"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "7": {
-      "Candidates": "Adelita Grijalva, Daniel Butierez",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Adelita Grijalva",
+          "party": "Democratic"
+        },
+        {
+          "name": "Daniel Butierez",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Bernadette Greene-Placentia, Abraham Hamadeh",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bernadette Greene-Placentia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Abraham Hamadeh",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Dani Sterbinsky, Paul Gosar",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dani Sterbinsky",
+          "party": "Democratic"
+        },
+        {
+          "name": "Paul Gosar",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Arkansas": {
     "1": {
-      "Candidates": "Terri Green, Rick Crawford, Steve Parsons",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Terri Green",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rick Crawford",
+          "party": "Republican"
+        },
+        {
+          "name": "Steve Parsons",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Chris Jones, French Hill",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Jones",
+          "party": "Democratic"
+        },
+        {
+          "name": "French Hill",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Robb Ryerse, Steve Womack, Bobby Wilson",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Robb Ryerse",
+          "party": "Democratic"
+        },
+        {
+          "name": "Steve Womack",
+          "party": "Republican"
+        },
+        {
+          "name": "Bobby Wilson",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "James Russell, Bruce Westerman",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "James Russell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Bruce Westerman",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "California": {
     "1": {
-      "Candidates": "Mike McGuire, James Gallagher",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mike McGuire",
+          "party": "Democratic"
+        },
+        {
+          "name": "James Gallagher",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Jared Huffman, Robin Littau",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jared Huffman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Robin Littau",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Ami Bera, Robb Tucker",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ami Bera",
+          "party": "Democratic"
+        },
+        {
+          "name": "Robb Tucker",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Mike Thompson, Eric Jones",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mike Thompson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eric Jones",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Michael Masuda, Tom McClintock",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Michael Masuda",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tom McClintock",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Richard Pan, Kevin Kiley",
-      "Party": "Democratic, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Richard Pan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kevin Kiley",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Doris Matsui, Mai Vang",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Doris Matsui",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mai Vang",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "John Garamendi, Rudy Recile",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "John Garamendi",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rudy Recile",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Josh Harder, John McBride",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Josh Harder",
+          "party": "Democratic"
+        },
+        {
+          "name": "John McBride",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Mark DeSaulnier, Jeff Frese",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mark DeSaulnier",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Frese",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Scott Wiener, Connie Chan",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Scott Wiener",
+          "party": "Democratic"
+        },
+        {
+          "name": "Connie Chan",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Lateefah Simon, Jamie Joyce",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lateefah Simon",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jamie Joyce",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Adam Gray, Kevin Lincoln",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Adam Gray",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kevin Lincoln",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Aisha Wahab, Melissa Hernandez",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Aisha Wahab",
+          "party": "Democratic"
+        },
+        {
+          "name": "Melissa Hernandez",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "15": {
-      "Candidates": "Kevin Mullin, Charles Hoelter",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kevin Mullin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Charles Hoelter",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "16": {
-      "Candidates": "Sam Liccardo, Peter Soul\u00e9",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sam Liccardo",
+          "party": "Democratic"
+        },
+        {
+          "name": "Peter Soul\u00e9",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "17": {
-      "Candidates": "Ro Khanna, Ritesh Tandon",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ro Khanna",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ritesh Tandon",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "18": {
-      "Candidates": "Zoe Lofgren, Shane Lewis",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Zoe Lofgren",
+          "party": "Democratic"
+        },
+        {
+          "name": "Shane Lewis",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "19": {
-      "Candidates": "Jimmy Panetta, Peter Coe Verbica",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jimmy Panetta",
+          "party": "Democratic"
+        },
+        {
+          "name": "Peter Coe Verbica",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "20": {
-      "Candidates": "Sandra Van Scotter, Vince Fong",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sandra Van Scotter",
+          "party": "Democratic"
+        },
+        {
+          "name": "Vince Fong",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "21": {
-      "Candidates": "Jim Costa, Kyle Kirkland",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jim Costa",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kyle Kirkland",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "22": {
-      "Candidates": "Randy Villegas, David Valadao",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Randy Villegas",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Valadao",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "23": {
-      "Candidates": "Tessa Lynn Hodge, Jay Obernolte",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Tessa Lynn Hodge",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jay Obernolte",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "24": {
-      "Candidates": "Salud Carbajal, Bob Smith",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Salud Carbajal",
+          "party": "Democratic"
+        },
+        {
+          "name": "Bob Smith",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "25": {
-      "Candidates": "Raul Ruiz, Joe Males",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Raul Ruiz",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joe Males",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "26": {
-      "Candidates": "Jacqui Irwin, Sam Gallucci",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jacqui Irwin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Sam Gallucci",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "27": {
-      "Candidates": "George Whitesides, Jason Gibbs",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "George Whitesides",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jason Gibbs",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "28": {
-      "Candidates": "Judy Chu, April Verlato",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Judy Chu",
+          "party": "Democratic"
+        },
+        {
+          "name": "April Verlato",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "29": {
-      "Candidates": "Luz Rivas, Angelica Due\u00f1as",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Luz Rivas",
+          "party": "Democratic"
+        },
+        {
+          "name": "Angelica Due\u00f1as",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "30": {
-      "Candidates": "Laura Friedman, Scott Meyers",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Laura Friedman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott Meyers",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "31": {
-      "Candidates": "Gil Cisneros, Eric Ching",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Gil Cisneros",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eric Ching",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "32": {
-      "Candidates": "Brad Sherman, Larry Thompson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brad Sherman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Larry Thompson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "33": {
-      "Candidates": "Pete Aguilar, Stephanie Vargas",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Pete Aguilar",
+          "party": "Democratic"
+        },
+        {
+          "name": "Stephanie Vargas",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "34": {
-      "Candidates": "Jimmy Gomez, Angela Gonzales-Torres",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jimmy Gomez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Angela Gonzales-Torres",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "35": {
-      "Candidates": "Norma Torres, Mike Cargile",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Norma Torres",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Cargile",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "36": {
-      "Candidates": "Ted Lieu, Houston Brignano",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ted Lieu",
+          "party": "Democratic"
+        },
+        {
+          "name": "Houston Brignano",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "37": {
-      "Candidates": "Sydney Kamlager-Dove, Samantha Mota",
-      "Party": "Democratic, Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sydney Kamlager-Dove",
+          "party": "Democratic"
+        },
+        {
+          "name": "Samantha Mota",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "38": {
-      "Candidates": "Hilda Solis, Pedro Casas",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Hilda Solis",
+          "party": "Democratic"
+        },
+        {
+          "name": "Pedro Casas",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "39": {
-      "Candidates": "Mark Takano, Steve Manos",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mark Takano",
+          "party": "Democratic"
+        },
+        {
+          "name": "Steve Manos",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "40": {
-      "Candidates": "Young Kim, Ken Calvert",
-      "Party": "Republican, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Young Kim",
+          "party": "Republican"
+        },
+        {
+          "name": "Ken Calvert",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "41": {
-      "Candidates": "Linda S\u00e1nchez, Mitch Clemmons",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Linda S\u00e1nchez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mitch Clemmons",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "42": {
-      "Candidates": "Robert Garcia, Brian Burley",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Robert Garcia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brian Burley",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "43": {
-      "Candidates": "Maxine Waters, Cristian Morales",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maxine Waters",
+          "party": "Democratic"
+        },
+        {
+          "name": "Cristian Morales",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "44": {
-      "Candidates": "Nanette Barrag\u00e1n, Genevieve Angel",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nanette Barrag\u00e1n",
+          "party": "Democratic"
+        },
+        {
+          "name": "Genevieve Angel",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "45": {
-      "Candidates": "Derek Tran, Chuong Vo",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Derek Tran",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chuong Vo",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "46": {
-      "Candidates": "Lou Correa, David Pan",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lou Correa",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Pan",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "47": {
-      "Candidates": "Dave Min, Jenny Le Roux",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dave Min",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jenny Le Roux",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "48": {
-      "Candidates": "Marni von Wilpert, Jim Desmond",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Marni von Wilpert",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jim Desmond",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "49": {
-      "Candidates": "Mike Levin, Armen Kurdian",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mike Levin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Armen Kurdian",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "50": {
-      "Candidates": "Scott Peters, Steve Cohen",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Scott Peters",
+          "party": "Democratic"
+        },
+        {
+          "name": "Steve Cohen",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "51": {
-      "Candidates": "Sara Jacobs, Ricardo Cabrera",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sara Jacobs",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ricardo Cabrera",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "52": {
-      "Candidates": "Juan Vargas, Jeff Belle",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Juan Vargas",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Belle",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Colorado": {
     "1": {
-      "Candidates": "Melat Kiros, Christy Peterson, Shimon Blau, Chad Humphrey, Critter Milton",
-      "Party": "Democratic, Republican, Independent, Libertarian, Unity",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Melat Kiros",
+          "party": "Democratic"
+        },
+        {
+          "name": "Christy Peterson",
+          "party": "Republican"
+        },
+        {
+          "name": "Shimon Blau",
+          "party": "Independent"
+        },
+        {
+          "name": "Chad Humphrey",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Critter Milton",
+          "party": "Unity"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Joe Neguse, Kelley Dennison, Gaylon Kent",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joe Neguse",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kelley Dennison",
+          "party": "Republican"
+        },
+        {
+          "name": "Gaylon Kent",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Dwayne Romero, Jeff Hurd, Clifton Brown",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dwayne Romero",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Hurd",
+          "party": "Republican"
+        },
+        {
+          "name": "Clifton Brown",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Eileen Laubacher, Lauren Boebert, Douglas Mangeris, Tim Veldhuizen",
-      "Party": "Democratic, Republican, Libertarian, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eileen Laubacher",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lauren Boebert",
+          "party": "Republican"
+        },
+        {
+          "name": "Douglas Mangeris",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Tim Veldhuizen",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Jessica Killin, Jeff Crank, Mark Elworth, Christopher Mitchell",
-      "Party": "Democratic, Republican, Libertarian, Constitution",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jessica Killin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Crank",
+          "party": "Republican"
+        },
+        {
+          "name": "Mark Elworth",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Christopher Mitchell",
+          "party": "Constitution"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Jason Crow, Jason Clark, Patty McMahon, Meredith Ryan, Samir Ezzeldin Witta",
-      "Party": "Democratic, Republican, Libertarian, Unity, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jason Crow",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jason Clark",
+          "party": "Republican"
+        },
+        {
+          "name": "Patty McMahon",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Meredith Ryan",
+          "party": "Unity"
+        },
+        {
+          "name": "Samir Ezzeldin Witta",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Brittany Pettersen, Tim Bennett, Lawrence Clark, Susan Hall, Dan Sallis",
-      "Party": "Democratic, Republican, Constitution, Unity, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brittany Pettersen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tim Bennett",
+          "party": "Republican"
+        },
+        {
+          "name": "Lawrence Clark",
+          "party": "Constitution"
+        },
+        {
+          "name": "Susan Hall",
+          "party": "Unity"
+        },
+        {
+          "name": "Dan Sallis",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Manny Rutinel, Gabe Evans, Dan Wood",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Manny Rutinel",
+          "party": "Democratic"
+        },
+        {
+          "name": "Gabe Evans",
+          "party": "Republican"
+        },
+        {
+          "name": "Dan Wood",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     }
   },
   "Connecticut": {
     "1": {
-      "Candidates": "Luke Bronin, Amy Chai",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Luke Bronin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Amy Chai",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Joe Courtney, George Austin",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joe Courtney",
+          "party": "Democratic"
+        },
+        {
+          "name": "George Austin",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Rosa DeLauro, Chris Lancia",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rosa DeLauro",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Lancia",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jim Himes, Michael Goldstein",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jim Himes",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Goldstein",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Jahana Hayes, Chris Shea",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jahana Hayes",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Shea",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Delaware": {
     "1": {
-      "Candidates": "Sarah McBride, Joseph Arminio, Scott Walker",
-      "Party": "Democratic, Republican, Write-in",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sarah McBride",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joseph Arminio",
+          "party": "Republican"
+        },
+        {
+          "name": "Scott Walker",
+          "party": "Write-in"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Florida": {
     "1": {
-      "Candidates": "Gay Valimont, Jimmy Patronis, Tyler Davis",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Gay Valimont",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jimmy Patronis",
+          "party": "Republican"
+        },
+        {
+          "name": "Tyler Davis",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Amanda Green, Austin Rogers",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Amanda Green",
+          "party": "Democratic"
+        },
+        {
+          "name": "Austin Rogers",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Seth Harp, Kat Cammack, Mike Klein",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Seth Harp",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kat Cammack",
+          "party": "Republican"
+        },
+        {
+          "name": "Mike Klein",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "LaShonda Holloway, Aaron Bean, Todd Schaefer, Mike Sell",
-      "Party": "Democratic, Republican, Independent, Florida Forward",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "LaShonda Holloway",
+          "party": "Democratic"
+        },
+        {
+          "name": "Aaron Bean",
+          "party": "Republican"
+        },
+        {
+          "name": "Todd Schaefer",
+          "party": "Independent"
+        },
+        {
+          "name": "Mike Sell",
+          "party": "Florida Forward"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Rachel Grage, John Rutherford",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rachel Grage",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Rutherford",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Eric Yonce, Randy Fine, Michael Gist, Andrew Parrott",
-      "Party": "Democratic, Republican, Independent, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eric Yonce",
+          "party": "Democratic"
+        },
+        {
+          "name": "Randy Fine",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Gist",
+          "party": "Independent"
+        },
+        {
+          "name": "Andrew Parrott",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Bale Dalton, Ryan Elijah, Christopher Dennison",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bale Dalton",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ryan Elijah",
+          "party": "Republican"
+        },
+        {
+          "name": "Christopher Dennison",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Jennifer Jenkins, Mike Haridopolos",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jennifer Jenkins",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Haridopolos",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Darren Soto, Dan Green",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Darren Soto",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dan Green",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Maxwell Frost",
-      "Party": "Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maxwell Frost",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "James Pericola, Joe Strada, Ralph Groves",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "James Pericola",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joe Strada",
+          "party": "Republican"
+        },
+        {
+          "name": "Ralph Groves",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Kimberly Overman, Gus Bilirakis, Branden Scrivener",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kimberly Overman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Gus Bilirakis",
+          "party": "Republican"
+        },
+        {
+          "name": "Branden Scrivener",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Leela Gray, Anna Paulina Luna, Tony D'Arrigo",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Leela Gray",
+          "party": "Democratic"
+        },
+        {
+          "name": "Anna Paulina Luna",
+          "party": "Republican"
+        },
+        {
+          "name": "Tony D'Arrigo",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Kathy Castor, Mike Beltran, Brian Lambert",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Kathy Castor",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Beltran",
+          "party": "Republican"
+        },
+        {
+          "name": "Brian Lambert",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "15": {
-      "Candidates": "Robert People, Laurel Lee",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Robert People",
+          "party": "Democratic"
+        },
+        {
+          "name": "Laurel Lee",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "16": {
-      "Candidates": "Kelly Kirschner, Sydney Gruters, Mark Davis",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kelly Kirschner",
+          "party": "Democratic"
+        },
+        {
+          "name": "Sydney Gruters",
+          "party": "Republican"
+        },
+        {
+          "name": "Mark Davis",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "17": {
-      "Candidates": "Matthew Montavon, Greg Steube, Michael Quirk",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Matthew Montavon",
+          "party": "Democratic"
+        },
+        {
+          "name": "Greg Steube",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Quirk",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "18": {
-      "Candidates": "Curtis Gibson, Scott Franklin, Deva Simmons",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Curtis Gibson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott Franklin",
+          "party": "Republican"
+        },
+        {
+          "name": "Deva Simmons",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "19": {
-      "Candidates": "Victor Arias, Jim Schwartzel, Seth Haskin",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Victor Arias",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jim Schwartzel",
+          "party": "Republican"
+        },
+        {
+          "name": "Seth Haskin",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "20": {
-      "Candidates": "Debbie Wasserman Schultz, Brent Andersen, Kedner Maxime",
-      "Party": "Democratic, Republican, Independent Party of Florida",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Debbie Wasserman Schultz",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brent Andersen",
+          "party": "Republican"
+        },
+        {
+          "name": "Kedner Maxime",
+          "party": "Independent Party of Florida"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "21": {
-      "Candidates": "James Martin, Brian Mast, Alexander Cooke",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "James Martin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brian Mast",
+          "party": "Republican"
+        },
+        {
+          "name": "Alexander Cooke",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "22": {
-      "Candidates": "Pia Dandiya, Casey Askar",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Pia Dandiya",
+          "party": "Democratic"
+        },
+        {
+          "name": "Casey Askar",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "23": {
-      "Candidates": "Lois Frankel, Deborah Adeimy",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lois Frankel",
+          "party": "Democratic"
+        },
+        {
+          "name": "Deborah Adeimy",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "24": {
-      "Candidates": "Oliver Gilbert, Te Mayonna Brown, Andy Daro",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Oliver Gilbert",
+          "party": "Democratic"
+        },
+        {
+          "name": "Te Mayonna Brown",
+          "party": "Republican"
+        },
+        {
+          "name": "Andy Daro",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "25": {
-      "Candidates": "Jared Moskowitz, Scott Singer, Peter Jassenoff",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jared Moskowitz",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott Singer",
+          "party": "Republican"
+        },
+        {
+          "name": "Peter Jassenoff",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "26": {
-      "Candidates": "Nicole Locklin, Mario D\u00edaz-Balart, Deborah Ann Meidinger Hosey",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nicole Locklin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mario D\u00edaz-Balart",
+          "party": "Republican"
+        },
+        {
+          "name": "Deborah Ann Meidinger Hosey",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "27": {
-      "Candidates": "Eliott Rodriguez, Mar\u00eda Elvira Salazar",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eliott Rodriguez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mar\u00eda Elvira Salazar",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "28": {
-      "Candidates": "Phil Ehr, Carlos Gim\u00e9nez, Eddy Rojas",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Phil Ehr",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carlos Gim\u00e9nez",
+          "party": "Republican"
+        },
+        {
+          "name": "Eddy Rojas",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Georgia": {
     "1": {
-      "Candidates": "Amanda Hollowell, Jim Kingston",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Amanda Hollowell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jim Kingston",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Sanford Bishop, Matt Day",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sanford Bishop",
+          "party": "Democratic"
+        },
+        {
+          "name": "Matt Day",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Maura Keller, Brian Jack",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maura Keller",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brian Jack",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Hank Johnson, James Duffie",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Hank Johnson",
+          "party": "Democratic"
+        },
+        {
+          "name": "James Duffie",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Nikema Williams, John Oscar Salvesen",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nikema Williams",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Oscar Salvesen",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Lucy McBath, Kevin Martin",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lucy McBath",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kevin Martin",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Tony Kozycki, Rich McCormick",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Tony Kozycki",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rich McCormick",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Kelly Esti, Austin Scott",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kelly Esti",
+          "party": "Democratic"
+        },
+        {
+          "name": "Austin Scott",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Caitlyn Gegen, Andrew Clyde",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Caitlyn Gegen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Andrew Clyde",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Pam Delancy, Houston Gaines",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Pam Delancy",
+          "party": "Democratic"
+        },
+        {
+          "name": "Houston Gaines",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Chris Harden, John Cowan",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Harden",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Cowan",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Ceretta Smith, Rick Allen",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ceretta Smith",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rick Allen",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Jasmine Clark, Jonathan Chavez",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jasmine Clark",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jonathan Chavez",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Shawn Harris, Clay Fuller, Andrew Underwood",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Shawn Harris",
+          "party": "Democratic"
+        },
+        {
+          "name": "Clay Fuller",
+          "party": "Republican"
+        },
+        {
+          "name": "Andrew Underwood",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Hawaii": {
     "1": {
-      "Candidates": "Ed Case, Adriel Lam, Nathan Berning, Jordan Conley",
-      "Party": "Democratic, Republican, Independent, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ed Case",
+          "party": "Democratic"
+        },
+        {
+          "name": "Adriel Lam",
+          "party": "Republican"
+        },
+        {
+          "name": "Nathan Berning",
+          "party": "Independent"
+        },
+        {
+          "name": "Jordan Conley",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Jill Tokuda, Brenton Awa, Edward Codelia, Randall Terry",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jill Tokuda",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brenton Awa",
+          "party": "Republican"
+        },
+        {
+          "name": "Edward Codelia",
+          "party": "Independent"
+        },
+        {
+          "name": "Randall Terry",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Idaho": {
     "1": {
-      "Candidates": "Kaylee Peterson, Russ Fulcher, Brendan Gomez, Sarah Zabel",
-      "Party": "Democratic, Republican, Constitution, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kaylee Peterson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Russ Fulcher",
+          "party": "Republican"
+        },
+        {
+          "name": "Brendan Gomez",
+          "party": "Constitution"
+        },
+        {
+          "name": "Sarah Zabel",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Ellie Gilbreath, Mike Simpson, Emre Houser, Tripp Hutchinson, Will Johanson, Carta Sierra",
-      "Party": "Democratic, Republican, Independent, Independent, Libertarian, Constitution",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ellie Gilbreath",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Simpson",
+          "party": "Republican"
+        },
+        {
+          "name": "Emre Houser",
+          "party": "Independent"
+        },
+        {
+          "name": "Tripp Hutchinson",
+          "party": "Independent"
+        },
+        {
+          "name": "Will Johanson",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Carta Sierra",
+          "party": "Constitution"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Illinois": {
     "1": {
-      "Candidates": "Jonathan Jackson, Christian Maxwell",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jonathan Jackson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Christian Maxwell",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Donna Miller, Michael Noack",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Donna Miller",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Noack",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Delia Ramirez, Angel Oakley",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Delia Ramirez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Angel Oakley",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Patty Garcia, Lupe Castillo, Chris Getty, Ed Hershey",
-      "Party": "Democratic, Republican, Independent, Working Class",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Patty Garcia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lupe Castillo",
+          "party": "Republican"
+        },
+        {
+          "name": "Chris Getty",
+          "party": "Independent"
+        },
+        {
+          "name": "Ed Hershey",
+          "party": "Working Class"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Mike Quigley, Tommy Hanson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mike Quigley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tommy Hanson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Sean Casten, Niki Conforti",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sean Casten",
+          "party": "Democratic"
+        },
+        {
+          "name": "Niki Conforti",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "La Shawn Ford, Chad Koppie",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "La Shawn Ford",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chad Koppie",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Melissa Bean, Jennifer Davis",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Melissa Bean",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jennifer Davis",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Daniel Biss, John Elleson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Daniel Biss",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Elleson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Brad Schneider, Carl Lambrecht",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brad Schneider",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carl Lambrecht",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Bill Foster, Jeff Walter",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bill Foster",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Walter",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Julie Fortier, Mike Bost",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Julie Fortier",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Bost",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Nikki Budzinski, Jeff Wilson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nikki Budzinski",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Wilson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Lauren Underwood, James Marter",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lauren Underwood",
+          "party": "Democratic"
+        },
+        {
+          "name": "James Marter",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "15": {
-      "Candidates": "Jennifer Todd, Mary Miller",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jennifer Todd",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mary Miller",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "16": {
-      "Candidates": "Paul Nolley, Darin LaHood",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Paul Nolley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Darin LaHood",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "17": {
-      "Candidates": "Eric Sorensen, Dillan Vancil",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eric Sorensen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dillan Vancil",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Indiana": {
     "1": {
-      "Candidates": "Frank Mrvan, Barb Regnitz",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Frank Mrvan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Barb Regnitz",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Jamee Decio, Rudy Yakym, William Henry",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jamee Decio",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rudy Yakym",
+          "party": "Republican"
+        },
+        {
+          "name": "William Henry",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Kelly Thompson, Marlin Stutzman",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kelly Thompson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Marlin Stutzman",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Drew Cox, Jim Baird",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Drew Cox",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jim Baird",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "J. D. Ford, Victoria Spartz",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "J. D. Ford",
+          "party": "Democratic"
+        },
+        {
+          "name": "Victoria Spartz",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Cinde Wirth, Jefferson Shreve",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Cinde Wirth",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jefferson Shreve",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Andr\u00e9 Carson, Patrick McAuley, James Sceniak",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Andr\u00e9 Carson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Patrick McAuley",
+          "party": "Republican"
+        },
+        {
+          "name": "James Sceniak",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Mary Allen, Mark Messmer",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mary Allen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mark Messmer",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Brad Meyer, Erin Houchin, Tonya Hudson",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brad Meyer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Erin Houchin",
+          "party": "Republican"
+        },
+        {
+          "name": "Tonya Hudson",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Iowa": {
     "1": {
-      "Candidates": "Christina Bohannan, Mariannette Miller-Meeks, Michael Bridgford",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Christina Bohannan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mariannette Miller-Meeks",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Bridgford",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Lindsay James, Joe Mitchell, Dave Bushaw, Rick Stewart",
-      "Party": "Democratic, Republican, Independent, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Lindsay James",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joe Mitchell",
+          "party": "Republican"
+        },
+        {
+          "name": "Dave Bushaw",
+          "party": "Independent"
+        },
+        {
+          "name": "Rick Stewart",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "3": {
-      "Candidates": "Sarah Trone Garriott, Zach Nunn",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sarah Trone Garriott",
+          "party": "Democratic"
+        },
+        {
+          "name": "Zach Nunn",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "David Dawson, Chris McGowan",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "David Dawson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris McGowan",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Kansas": {
     "1": {
-      "Candidates": "Lauren Reinhold, Tracey Mann, Steven Jacob",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lauren Reinhold",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tracey Mann",
+          "party": "Republican"
+        },
+        {
+          "name": "Steven Jacob",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Don Coover, Derek Schmidt, John Hauer",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Don Coover",
+          "party": "Democratic"
+        },
+        {
+          "name": "Derek Schmidt",
+          "party": "Republican"
+        },
+        {
+          "name": "John Hauer",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Sharice Davids, Eric Jenkins, Steven Hohe",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sharice Davids",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eric Jenkins",
+          "party": "Republican"
+        },
+        {
+          "name": "Steven Hohe",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Katy Tyndell, Ron Estes, Drew Cranmer",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Katy Tyndell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ron Estes",
+          "party": "Republican"
+        },
+        {
+          "name": "Drew Cranmer",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Kentucky": {
     "1": {
-      "Candidates": "Drew Williams, James Comer",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Drew Williams",
+          "party": "Democratic"
+        },
+        {
+          "name": "James Comer",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Megan Wingfield, Brett Guthrie, Thomas Loecken",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Megan Wingfield",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brett Guthrie",
+          "party": "Republican"
+        },
+        {
+          "name": "Thomas Loecken",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Morgan McGarvey, Maria Rodriquez",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Morgan McGarvey",
+          "party": "Democratic"
+        },
+        {
+          "name": "Maria Rodriquez",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Melissa Strange, Ed Gallrein, Jeremy Todd",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Melissa Strange",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ed Gallrein",
+          "party": "Republican"
+        },
+        {
+          "name": "Jeremy Todd",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Ned Pillersdorf, Hal Rogers, Gerardo Serrano, Mikel Wein",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ned Pillersdorf",
+          "party": "Democratic"
+        },
+        {
+          "name": "Hal Rogers",
+          "party": "Republican"
+        },
+        {
+          "name": "Gerardo Serrano",
+          "party": "Independent"
+        },
+        {
+          "name": "Mikel Wein",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Zach Dembo, Ralph Alvarado, Jay Bowman, Pete Lynch",
-      "Party": "Democratic, Republican, Independent, Kentucky Party",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Zach Dembo",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ralph Alvarado",
+          "party": "Republican"
+        },
+        {
+          "name": "Jay Bowman",
+          "party": "Independent"
+        },
+        {
+          "name": "Pete Lynch",
+          "party": "Kentucky Party"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Louisiana": {
     "1": {
-      "Candidates": "Lauren Jewett, Steve Scalise, Randy Arrington, Liddy Glass",
-      "Party": "Democratic, Republican, Republican, No Party",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lauren Jewett",
+          "party": "Democratic"
+        },
+        {
+          "name": "Steve Scalise",
+          "party": "Republican"
+        },
+        {
+          "name": "Randy Arrington",
+          "party": "Republican"
+        },
+        {
+          "name": "Liddy Glass",
+          "party": "No Party"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Troy Carter, Peter Williams, Lisa Ballay, Walter Beach, Renada Collins",
-      "Party": "Democratic, Republican, Libertarian, No Party, No Party",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Troy Carter",
+          "party": "Democratic"
+        },
+        {
+          "name": "Peter Williams",
+          "party": "Republican"
+        },
+        {
+          "name": "Lisa Ballay",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Walter Beach",
+          "party": "No Party"
+        },
+        {
+          "name": "Renada Collins",
+          "party": "No Party"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "John Day, Priscilla Gonzalez, Caleb Walker, Clay Higgins, Kate Cotten, Tia LeBrun",
-      "Party": "Democratic, Democratic, Democratic, Republican, Republican, No Party",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "John Day",
+          "party": "Democratic"
+        },
+        {
+          "name": "Priscilla Gonzalez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Caleb Walker",
+          "party": "Democratic"
+        },
+        {
+          "name": "Clay Higgins",
+          "party": "Republican"
+        },
+        {
+          "name": "Kate Cotten",
+          "party": "Republican"
+        },
+        {
+          "name": "Tia LeBrun",
+          "party": "No Party"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Conrad Cable, Matt Gromlich, Mike Johnson, Gordon Heslop, Mike Nichols",
-      "Party": "Democratic, Democratic, Republican, Republican, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Conrad Cable",
+          "party": "Democratic"
+        },
+        {
+          "name": "Matt Gromlich",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Johnson",
+          "party": "Republican"
+        },
+        {
+          "name": "Gordon Heslop",
+          "party": "Republican"
+        },
+        {
+          "name": "Mike Nichols",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Dan McKay, Pat Moore, Antonio Wilson, Stewart Cathey Jr., Misti Cordell, Omar Dantzler, Michael Echols, Gabe Firment, Austin Magee",
-      "Party": "Democratic, Democratic, Democratic, Republican, Republican, Republican, Republican, Republican, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dan McKay",
+          "party": "Democratic"
+        },
+        {
+          "name": "Pat Moore",
+          "party": "Democratic"
+        },
+        {
+          "name": "Antonio Wilson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Stewart Cathey Jr.",
+          "party": "Republican"
+        },
+        {
+          "name": "Misti Cordell",
+          "party": "Republican"
+        },
+        {
+          "name": "Omar Dantzler",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Echols",
+          "party": "Republican"
+        },
+        {
+          "name": "Gabe Firment",
+          "party": "Republican"
+        },
+        {
+          "name": "Austin Magee",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Chauna Banks, Pat Forbes, Lindsay Garcia, Monique Appeaning, Larry Davis III, Rick Edmonds, Michael Mebruer, Blake Miguez, Stephen Wagley, Rufus Craig Jr.",
-      "Party": "Democratic, Democratic, Democratic, Republican, Republican, Republican, Republican, Republican, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chauna Banks",
+          "party": "Democratic"
+        },
+        {
+          "name": "Pat Forbes",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lindsay Garcia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Monique Appeaning",
+          "party": "Republican"
+        },
+        {
+          "name": "Larry Davis III",
+          "party": "Republican"
+        },
+        {
+          "name": "Rick Edmonds",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Mebruer",
+          "party": "Republican"
+        },
+        {
+          "name": "Blake Miguez",
+          "party": "Republican"
+        },
+        {
+          "name": "Stephen Wagley",
+          "party": "Republican"
+        },
+        {
+          "name": "Rufus Craig Jr.",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Maine": {
     "1": {
-      "Candidates": "Chellie Pingree, Ronald Russell",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chellie Pingree",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ronald Russell",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Matthew Dunlap, Paul LePage",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Matthew Dunlap",
+          "party": "Democratic"
+        },
+        {
+          "name": "Paul LePage",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Maryland": {
     "1": {
-      "Candidates": "Dan Schwartz, Andy Harris",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dan Schwartz",
+          "party": "Democratic"
+        },
+        {
+          "name": "Andy Harris",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Johnny Olszewski, Dave Wallace",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Johnny Olszewski",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dave Wallace",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Sarah Elfreth, Berney Flowers",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sarah Elfreth",
+          "party": "Democratic"
+        },
+        {
+          "name": "Berney Flowers",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Glenn Ivey, George McDermott, Sam Husseini",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Glenn Ivey",
+          "party": "Democratic"
+        },
+        {
+          "name": "George McDermott",
+          "party": "Republican"
+        },
+        {
+          "name": "Sam Husseini",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Adrian Boafo, Chris Chaffee",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Adrian Boafo",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Chaffee",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "April McClain Delaney, Robin Ficker, Moshe Landman",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "April McClain Delaney",
+          "party": "Democratic"
+        },
+        {
+          "name": "Robin Ficker",
+          "party": "Republican"
+        },
+        {
+          "name": "Moshe Landman",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Kweisi Mfume, Scott Collier",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kweisi Mfume",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott Collier",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Jamie Raskin, Cheryl Riley, Nancy Wallace",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jamie Raskin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Cheryl Riley",
+          "party": "Republican"
+        },
+        {
+          "name": "Nancy Wallace",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Massachusetts": {
     "1": {
-      "Candidates": "Richard Neal, Nadia Milleron",
-      "Party": "Democratic, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Richard Neal",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nadia Milleron",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Jim McGovern",
-      "Party": "Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jim McGovern",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Lori Trahan, Gary Grossi",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lori Trahan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Gary Grossi",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jake Auchincloss, Tom Stalcup",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jake Auchincloss",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tom Stalcup",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Katherine Clark",
-      "Party": "Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Katherine Clark",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Dan Koh, Micah Jones",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dan Koh",
+          "party": "Democratic"
+        },
+        {
+          "name": "Micah Jones",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Ayanna Pressley",
-      "Party": "Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ayanna Pressley",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Stephen Lynch, Robert Burke",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Stephen Lynch",
+          "party": "Democratic"
+        },
+        {
+          "name": "Robert Burke",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Bill Keating, Tyler MacAllister",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bill Keating",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tyler MacAllister",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Michigan": {
     "1": {
-      "Candidates": "Callie Barr, Jack Bergman, LaVeta Davenport, Zebulon Featherly, Liz Hakola, Doc Kovaly, Arnett Satterla",
-      "Party": "Democratic, Republican, Green, Independent, Working Class, U.S. Taxpayers, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Callie Barr",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jack Bergman",
+          "party": "Republican"
+        },
+        {
+          "name": "LaVeta Davenport",
+          "party": "Green"
+        },
+        {
+          "name": "Zebulon Featherly",
+          "party": "Independent"
+        },
+        {
+          "name": "Liz Hakola",
+          "party": "Working Class"
+        },
+        {
+          "name": "Doc Kovaly",
+          "party": "U.S. Taxpayers"
+        },
+        {
+          "name": "Arnett Satterla",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Ben Ambrose, John Moolenaar, Charlotte Magoon",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ben Ambrose",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Moolenaar",
+          "party": "Republican"
+        },
+        {
+          "name": "Charlotte Magoon",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Hillary Scholten, Terri DeBoer, Joe Jock",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Hillary Scholten",
+          "party": "Democratic"
+        },
+        {
+          "name": "Terri DeBoer",
+          "party": "Republican"
+        },
+        {
+          "name": "Joe Jock",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Sean McCann, Bill Huizenga, Shafina Che Barnett",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Sean McCann",
+          "party": "Democratic"
+        },
+        {
+          "name": "Bill Huizenga",
+          "party": "Republican"
+        },
+        {
+          "name": "Shafina Che Barnett",
+          "party": "Green"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "5": {
-      "Candidates": "Christian Vukasovich, Tim Walberg, Jim Bronke, Sharon Marie Renier, Ronald Muszynski",
-      "Party": "Democratic, Republican, Green, U.S. Taxpayers, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Christian Vukasovich",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tim Walberg",
+          "party": "Republican"
+        },
+        {
+          "name": "Jim Bronke",
+          "party": "Green"
+        },
+        {
+          "name": "Sharon Marie Renier",
+          "party": "U.S. Taxpayers"
+        },
+        {
+          "name": "Ronald Muszynski",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Debbie Dingell, Heather Smiley, Michael Mickevicius, Linda Rayburn, Clyde Shabazz, Timothy Tegan",
-      "Party": "Democratic, Republican, U.S. Taxpayers, Working Class, Green, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Debbie Dingell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Heather Smiley",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Mickevicius",
+          "party": "U.S. Taxpayers"
+        },
+        {
+          "name": "Linda Rayburn",
+          "party": "Working Class"
+        },
+        {
+          "name": "Clyde Shabazz",
+          "party": "Green"
+        },
+        {
+          "name": "Timothy Tegan",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "William Lawrence, Tom Barrett, Shane Dedrick, Felix Thibodeau",
-      "Party": "Democratic, Republican, Green, Working Class",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "William Lawrence",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tom Barrett",
+          "party": "Republican"
+        },
+        {
+          "name": "Shane Dedrick",
+          "party": "Green"
+        },
+        {
+          "name": "Felix Thibodeau",
+          "party": "Working Class"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "8": {
-      "Candidates": "Kristen McDonald Rivet, Thomas Smith, Jim Casha, Kathy Goodwin, Mia Pettus",
-      "Party": "Democratic, Republican, Green, Working Class, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kristen McDonald Rivet",
+          "party": "Democratic"
+        },
+        {
+          "name": "Thomas Smith",
+          "party": "Republican"
+        },
+        {
+          "name": "Jim Casha",
+          "party": "Green"
+        },
+        {
+          "name": "Kathy Goodwin",
+          "party": "Working Class"
+        },
+        {
+          "name": "Mia Pettus",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Ray Pooley, Lisa McClain, Destiny Clayton, Kevin Vayko, John Vlahos, Jim Walkowicz",
-      "Party": "Democratic, Republican, Green, Libertarian, U.S. Taxpayers, Working Class",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ray Pooley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lisa McClain",
+          "party": "Republican"
+        },
+        {
+          "name": "Destiny Clayton",
+          "party": "Green"
+        },
+        {
+          "name": "Kevin Vayko",
+          "party": "Libertarian"
+        },
+        {
+          "name": "John Vlahos",
+          "party": "U.S. Taxpayers"
+        },
+        {
+          "name": "Jim Walkowicz",
+          "party": "Working Class"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Christina Hines, Mike Bouchard, Andrea Kirby, Kwabena Nkromo, Mike Saliba",
-      "Party": "Democratic, Republican, Working Class, Green, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Christina Hines",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Bouchard",
+          "party": "Republican"
+        },
+        {
+          "name": "Andrea Kirby",
+          "party": "Working Class"
+        },
+        {
+          "name": "Kwabena Nkromo",
+          "party": "Green"
+        },
+        {
+          "name": "Mike Saliba",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "11": {
-      "Candidates": "Jeremy Moss, Ethan Baker, Farid Ishac, Anil Kumar, Ryan Teasdale",
-      "Party": "Democratic, Republican, Libertarian, Independent, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jeremy Moss",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ethan Baker",
+          "party": "Republican"
+        },
+        {
+          "name": "Farid Ishac",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Anil Kumar",
+          "party": "Independent"
+        },
+        {
+          "name": "Ryan Teasdale",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Rashida Tlaib, James Hooper, Brenda Sanders, Marc Sosnowski, Gary Walkowicz",
-      "Party": "Democratic, Republican, Green, U.S. Taxpayers, Working Class",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rashida Tlaib",
+          "party": "Democratic"
+        },
+        {
+          "name": "James Hooper",
+          "party": "Republican"
+        },
+        {
+          "name": "Brenda Sanders",
+          "party": "Green"
+        },
+        {
+          "name": "Marc Sosnowski",
+          "party": "U.S. Taxpayers"
+        },
+        {
+          "name": "Gary Walkowicz",
+          "party": "Working Class"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Donavan McKinney, T.P. Nykoriak, Shelby Campbell, Simone Coleman, Chris Dardzinski, Maurice Morton",
-      "Party": "Democratic, Republican, Independent, Working Class, U.S. Taxpayers, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Donavan McKinney",
+          "party": "Democratic"
+        },
+        {
+          "name": "T.P. Nykoriak",
+          "party": "Republican"
+        },
+        {
+          "name": "Shelby Campbell",
+          "party": "Independent"
+        },
+        {
+          "name": "Simone Coleman",
+          "party": "Working Class"
+        },
+        {
+          "name": "Chris Dardzinski",
+          "party": "U.S. Taxpayers"
+        },
+        {
+          "name": "Maurice Morton",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Minnesota": {
     "1": {
-      "Candidates": "Jake Johnson, Brad Finstad",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jake Johnson",
+          "party": "DFL"
+        },
+        {
+          "name": "Brad Finstad",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Matt Little, Eric Pratt",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Matt Little",
+          "party": "DFL"
+        },
+        {
+          "name": "Eric Pratt",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Kelly Morrison, Tyler Bass",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kelly Morrison",
+          "party": "DFL"
+        },
+        {
+          "name": "Tyler Bass",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Betty McCollum, Paul Wikstrom",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Betty McCollum",
+          "party": "DFL"
+        },
+        {
+          "name": "Paul Wikstrom",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Ilhan Omar, John Nagel",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ilhan Omar",
+          "party": "DFL"
+        },
+        {
+          "name": "John Nagel",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Doug Chapin, Tom Emmer, Kelly Doss",
-      "Party": "DFL, Republican, Forward-Independence",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Doug Chapin",
+          "party": "DFL"
+        },
+        {
+          "name": "Tom Emmer",
+          "party": "Republican"
+        },
+        {
+          "name": "Kelly Doss",
+          "party": "Forward-Independence"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Erik Osberg, Michelle Fischbach",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Erik Osberg",
+          "party": "DFL"
+        },
+        {
+          "name": "Michelle Fischbach",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Trina Swanson, Pete Stauber",
-      "Party": "DFL, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Trina Swanson",
+          "party": "DFL"
+        },
+        {
+          "name": "Pete Stauber",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Mississippi": {
     "1": {
-      "Candidates": "Cliff Johnson, Trent Kelly",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Cliff Johnson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Trent Kelly",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Bennie Thompson, Ron Eller, Bennie Foster",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bennie Thompson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ron Eller",
+          "party": "Republican"
+        },
+        {
+          "name": "Bennie Foster",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Michael Chiaradio, Michael Guest, Erik Kiehle",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Michael Chiaradio",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Guest",
+          "party": "Republican"
+        },
+        {
+          "name": "Erik Kiehle",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jeffrey Hulum III, Mike Ezell, Carl Boyanton",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jeffrey Hulum III",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Ezell",
+          "party": "Republican"
+        },
+        {
+          "name": "Carl Boyanton",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Missouri": {
     "1": {
-      "Candidates": "Wesley Bell, Paul Berry, Tom Schmitz",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Wesley Bell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Paul Berry",
+          "party": "Republican"
+        },
+        {
+          "name": "Tom Schmitz",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Fred Wellman, Ann Wagner, Brandon Daugherty",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Fred Wellman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ann Wagner",
+          "party": "Republican"
+        },
+        {
+          "name": "Brandon Daugherty",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Bethany Mann, Bob Onder, Jim Higgins",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bethany Mann",
+          "party": "Democratic"
+        },
+        {
+          "name": "Bob Onder",
+          "party": "Republican"
+        },
+        {
+          "name": "Jim Higgins",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jordan Herrera, Mark Alford, Thomas Holbrook",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jordan Herrera",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mark Alford",
+          "party": "Republican"
+        },
+        {
+          "name": "Thomas Holbrook",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Emanuel Cleaver, Rick Brattin, Randy Langkraehr",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Emanuel Cleaver",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rick Brattin",
+          "party": "Republican"
+        },
+        {
+          "name": "Randy Langkraehr",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Josh Smead, Chris Stigall, Andy Maidment",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Josh Smead",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Stigall",
+          "party": "Republican"
+        },
+        {
+          "name": "Andy Maidment",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Missi Hesketh, Eric Burlison, Kevin Craig",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Missi Hesketh",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eric Burlison",
+          "party": "Republican"
+        },
+        {
+          "name": "Kevin Craig",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Chris Reichard, Jason Smith, Rebecca Sharpe Lombard",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Reichard",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jason Smith",
+          "party": "Republican"
+        },
+        {
+          "name": "Rebecca Sharpe Lombard",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Montana": {
     "1": {
-      "Candidates": "Sam Forstag, Aaron Flint, Kimberly Persico, Nick Sheehy",
-      "Party": "Democratic, Republican, Independent, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Sam Forstag",
+          "party": "Democratic"
+        },
+        {
+          "name": "Aaron Flint",
+          "party": "Republican"
+        },
+        {
+          "name": "Kimberly Persico",
+          "party": "Independent"
+        },
+        {
+          "name": "Nick Sheehy",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "2": {
-      "Candidates": "Brian Miller, Troy Downing, Michael Eisenhauer, Patrick McCracken",
-      "Party": "Democratic, Republican, Independent, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brian Miller",
+          "party": "Democratic"
+        },
+        {
+          "name": "Troy Downing",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Eisenhauer",
+          "party": "Independent"
+        },
+        {
+          "name": "Patrick McCracken",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Nebraska": {
     "1": {
-      "Candidates": "Chris Backemeyer, Mike Flood, Daniel Hartong, Nik Sandman",
-      "Party": "Democratic, Republican, America First, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Backemeyer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Flood",
+          "party": "Republican"
+        },
+        {
+          "name": "Daniel Hartong",
+          "party": "America First"
+        },
+        {
+          "name": "Nik Sandman",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Denise Powell, Brinker Harding, Eric Foreman",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Denise Powell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brinker Harding",
+          "party": "Republican"
+        },
+        {
+          "name": "Eric Foreman",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Becky Stille, Adrian Smith, Macey Budke, Mark Cohen, David Else",
-      "Party": "Democratic, Republican, Working People, Independent, Legal Marijuana Now",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Becky Stille",
+          "party": "Democratic"
+        },
+        {
+          "name": "Adrian Smith",
+          "party": "Republican"
+        },
+        {
+          "name": "Macey Budke",
+          "party": "Working People"
+        },
+        {
+          "name": "Mark Cohen",
+          "party": "Independent"
+        },
+        {
+          "name": "David Else",
+          "party": "Legal Marijuana Now"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Nevada": {
     "1": {
-      "Candidates": "Dina Titus, Carrie Buck, Bobby Khan, Steven St. John, Anthony Thomas, Victor Willert",
-      "Party": "Democratic, Republican, Independent, Independent, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dina Titus",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carrie Buck",
+          "party": "Republican"
+        },
+        {
+          "name": "Bobby Khan",
+          "party": "Independent"
+        },
+        {
+          "name": "Steven St. John",
+          "party": "Independent"
+        },
+        {
+          "name": "Anthony Thomas",
+          "party": "Independent"
+        },
+        {
+          "name": "Victor Willert",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Teresa Benitez-Thompson, David Flippo, Lynn Chapman",
-      "Party": "Democratic, Republican, Independent American",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Teresa Benitez-Thompson",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Flippo",
+          "party": "Republican"
+        },
+        {
+          "name": "Lynn Chapman",
+          "party": "Independent American"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Susie Lee, Martin O'Donnell, David Anderson, Dean Johnson, Jon Kamerath",
-      "Party": "Democratic, Republican, Independent, Independent, Independent American",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Susie Lee",
+          "party": "Democratic"
+        },
+        {
+          "name": "Martin O'Donnell",
+          "party": "Republican"
+        },
+        {
+          "name": "David Anderson",
+          "party": "Independent"
+        },
+        {
+          "name": "Dean Johnson",
+          "party": "Independent"
+        },
+        {
+          "name": "Jon Kamerath",
+          "party": "Independent American"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Steven Horsford, Cody Whipple, Russell Best, William Johnson, Gary Steele",
-      "Party": "Democratic, Republican, Independent American, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Steven Horsford",
+          "party": "Democratic"
+        },
+        {
+          "name": "Cody Whipple",
+          "party": "Republican"
+        },
+        {
+          "name": "Russell Best",
+          "party": "Independent American"
+        },
+        {
+          "name": "William Johnson",
+          "party": "Independent"
+        },
+        {
+          "name": "Gary Steele",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "New Hampshire": {
     "1": {
-      "Candidates": "Stefany Shaheen, Anthony DiLorenzo",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Stefany Shaheen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Anthony DiLorenzo",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Maggie Goodlander, Lily Tang Williams, Robbie Mahrou",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maggie Goodlander",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lily Tang Williams",
+          "party": "Republican"
+        },
+        {
+          "name": "Robbie Mahrou",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "New Jersey": {
     "1": {
-      "Candidates": "Donald Norcross, Damon Galdo",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Donald Norcross",
+          "party": "Democratic"
+        },
+        {
+          "name": "Damon Galdo",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Zack Mullock, Jeff Van Drew, Ramon Mora Jr.",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Zack Mullock",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeff Van Drew",
+          "party": "Republican"
+        },
+        {
+          "name": "Ramon Mora Jr.",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Herb Conaway, Michael McGuire, Ryan Kelly, Steven Welzer",
-      "Party": "Democratic, Republican, Independent, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Herb Conaway",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael McGuire",
+          "party": "Republican"
+        },
+        {
+          "name": "Ryan Kelly",
+          "party": "Independent"
+        },
+        {
+          "name": "Steven Welzer",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Rachel Peace, Chris Smith",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rachel Peace",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Smith",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Josh Gottheimer, Sean Kirrane, Adam Rueda",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Josh Gottheimer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Sean Kirrane",
+          "party": "Republican"
+        },
+        {
+          "name": "Adam Rueda",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Frank Pallone, Hillary Herzig",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Frank Pallone",
+          "party": "Democratic"
+        },
+        {
+          "name": "Hillary Herzig",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Rebecca Bennett, Thomas Kean Jr., Seamus O'Toole",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rebecca Bennett",
+          "party": "Democratic"
+        },
+        {
+          "name": "Thomas Kean Jr.",
+          "party": "Republican"
+        },
+        {
+          "name": "Seamus O'Toole",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Rob Menendez, Aristotle Eliopoulos, Craig Honts, Da'Shone Hughey",
-      "Party": "Democratic, Independent, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rob Menendez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Aristotle Eliopoulos",
+          "party": "Independent"
+        },
+        {
+          "name": "Craig Honts",
+          "party": "Independent"
+        },
+        {
+          "name": "Da'Shone Hughey",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Nellie Pou, Rosie Pino, Terrisa Bukovinac",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nellie Pou",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rosie Pino",
+          "party": "Republican"
+        },
+        {
+          "name": "Terrisa Bukovinac",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "LaMonica McIver, Carmen Bucco",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "LaMonica McIver",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carmen Bucco",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Analilia Mejia, Joe Hathaway, Alan Bond",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Analilia Mejia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joe Hathaway",
+          "party": "Republican"
+        },
+        {
+          "name": "Alan Bond",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Adam Hamawy, Gregg Mele, Andres Jinete, Winston Jordan",
-      "Party": "Democratic, Republican, Green, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Adam Hamawy",
+          "party": "Democratic"
+        },
+        {
+          "name": "Gregg Mele",
+          "party": "Republican"
+        },
+        {
+          "name": "Andres Jinete",
+          "party": "Green"
+        },
+        {
+          "name": "Winston Jordan",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "New Mexico": {
     "1": {
-      "Candidates": "Melanie Stansbury, Didi Okpareke",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Melanie Stansbury",
+          "party": "Democratic"
+        },
+        {
+          "name": "Didi Okpareke",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Gabe Vasquez, Greg Cunningham",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Gabe Vasquez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Greg Cunningham",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Teresa Leger Fern\u00e1ndez, Martin Zamora",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Teresa Leger Fern\u00e1ndez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Martin Zamora",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "New York": {
     "1": {
-      "Candidates": "Chris Gallant, Nick LaLota",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Gallant",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nick LaLota",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Patrick Halpin, Andrew Garbarino",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Patrick Halpin",
+          "party": "Democratic"
+        },
+        {
+          "name": "Andrew Garbarino",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Tom Suozzi, Mike LiPetri",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Tom Suozzi",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike LiPetri",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Laura Gillen, Jeanine Driscoll",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Laura Gillen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jeanine Driscoll",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Gregory Meeks, George Marsh",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Gregory Meeks",
+          "party": "Democratic"
+        },
+        {
+          "name": "George Marsh",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Grace Meng, Joseph Chou",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Grace Meng",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joseph Chou",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Claire Valdez, Melvin Rivera",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Claire Valdez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Melvin Rivera",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Hakeem Jeffries, Lewis Mizrahi",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Hakeem Jeffries",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lewis Mizrahi",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Yvette Clarke, Joel Anabilah-Azumah",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Yvette Clarke",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joel Anabilah-Azumah",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Brad Lander, Jennifer Moore",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brad Lander",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jennifer Moore",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Michael DeCillis, Nicole Malliotakis",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Michael DeCillis",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nicole Malliotakis",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Micah Lasher, Caroline Shinkle",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Micah Lasher",
+          "party": "Democratic"
+        },
+        {
+          "name": "Caroline Shinkle",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Darializa Avila Chevalier, Jomo Williams",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Darializa Avila Chevalier",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jomo Williams",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Alexandria Ocasio-Cortez, Diamant Hysenaj",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Diamant Hysenaj",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "15": {
-      "Candidates": "Ritchie Torres, Stylo Sapaskis, Gonzalo Duran, Andre Easton",
-      "Party": "Democratic, Republican, Conservative, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ritchie Torres",
+          "party": "Democratic"
+        },
+        {
+          "name": "Stylo Sapaskis",
+          "party": "Republican"
+        },
+        {
+          "name": "Gonzalo Duran",
+          "party": "Conservative"
+        },
+        {
+          "name": "Andre Easton",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "16": {
-      "Candidates": "George Latimer, Joseph Cinquemani",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "George Latimer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joseph Cinquemani",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "17": {
-      "Candidates": "Cait Conley, Mike Lawler",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Cait Conley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Lawler",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "18": {
-      "Candidates": "Pat Ryan, Jacqueline Auringer",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Pat Ryan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jacqueline Auringer",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "19": {
-      "Candidates": "Josh Riley, Peter Oberacker",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Josh Riley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Peter Oberacker",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "20": {
-      "Candidates": "Paul Tonko, Ralph Ambrosio",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Paul Tonko",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ralph Ambrosio",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "21": {
-      "Candidates": "Blake Gendebien, Anthony Constantino",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Blake Gendebien",
+          "party": "Democratic"
+        },
+        {
+          "name": "Anthony Constantino",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "22": {
-      "Candidates": "John Mannion, Kailee Buller",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "John Mannion",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kailee Buller",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "23": {
-      "Candidates": "Aaron Gies, Nick Langworthy",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Aaron Gies",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nick Langworthy",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "24": {
-      "Candidates": "Alissa Ellman, Claudia Tenney, Ken Estes, Todd Sloan",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Alissa Ellman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Claudia Tenney",
+          "party": "Republican"
+        },
+        {
+          "name": "Ken Estes",
+          "party": "Independent"
+        },
+        {
+          "name": "Todd Sloan",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "25": {
-      "Candidates": "Joseph Morelle, Virginia McIntyre",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joseph Morelle",
+          "party": "Democratic"
+        },
+        {
+          "name": "Virginia McIntyre",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "26": {
-      "Candidates": "Tim Kennedy, Dennis Hannon",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Tim Kennedy",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dennis Hannon",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "North Carolina": {
     "1": {
-      "Candidates": "Don Davis, Laurie Buckhout, Tom Bailey",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Don Davis",
+          "party": "Democratic"
+        },
+        {
+          "name": "Laurie Buckhout",
+          "party": "Republican"
+        },
+        {
+          "name": "Tom Bailey",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "2": {
-      "Candidates": "Deborah Ross, Eugene Douglass, Matthew Laszacs",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Deborah Ross",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eugene Douglass",
+          "party": "Republican"
+        },
+        {
+          "name": "Matthew Laszacs",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Raymond Smith Jr., Greg Murphy, Daniel Cavender",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Raymond Smith Jr.",
+          "party": "Democratic"
+        },
+        {
+          "name": "Greg Murphy",
+          "party": "Republican"
+        },
+        {
+          "name": "Daniel Cavender",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Valerie Foushee, Max Ganorkar, Guy Meilleur",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Valerie Foushee",
+          "party": "Democratic"
+        },
+        {
+          "name": "Max Ganorkar",
+          "party": "Republican"
+        },
+        {
+          "name": "Guy Meilleur",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Chuck Hubbard, Virginia Foxx, Robert Luffman",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chuck Hubbard",
+          "party": "Democratic"
+        },
+        {
+          "name": "Virginia Foxx",
+          "party": "Republican"
+        },
+        {
+          "name": "Robert Luffman",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Cyril Jefferson, Addison McDowell",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Cyril Jefferson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Addison McDowell",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Kimberly Hardy, David Rouzer, Maad Abu-Ghazalah",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kimberly Hardy",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Rouzer",
+          "party": "Republican"
+        },
+        {
+          "name": "Maad Abu-Ghazalah",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Colby Watson, Mark Harris",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Colby Watson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mark Harris",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Richard Ojeda, Richard Hudson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Richard Ojeda",
+          "party": "Democratic"
+        },
+        {
+          "name": "Richard Hudson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Ashley Bell, Pat Harrigan, Steve Feldman",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ashley Bell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Pat Harrigan",
+          "party": "Republican"
+        },
+        {
+          "name": "Steve Feldman",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Jamie Ager, Jennifer Balkcom, Travis Groo",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Jamie Ager",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jennifer Balkcom",
+          "party": "Republican"
+        },
+        {
+          "name": "Travis Groo",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "12": {
-      "Candidates": "Alma Adams, Jack Codiga",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Alma Adams",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jack Codiga",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Paul Barringer, Brad Knott, Steven Swinton",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Paul Barringer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brad Knott",
+          "party": "Republican"
+        },
+        {
+          "name": "Steven Swinton",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Lakesha Womack, Tim Moore",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lakesha Womack",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tim Moore",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "North Dakota": {
     "1": {
-      "Candidates": "Trygve Hammer, Julie Fedorchak, Charles Tuttle",
-      "Party": "Democratic-NPL, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Trygve Hammer",
+          "party": "Democratic-NPL"
+        },
+        {
+          "name": "Julie Fedorchak",
+          "party": "Republican"
+        },
+        {
+          "name": "Charles Tuttle",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Ohio": {
     "1": {
-      "Candidates": "Greg Landsman, Eric Conroy, John Hancock",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Greg Landsman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eric Conroy",
+          "party": "Republican"
+        },
+        {
+          "name": "John Hancock",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Jennifer Mazzuckelli, David Taylor",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jennifer Mazzuckelli",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Taylor",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Joyce Beatty, Cleophus Dulaney",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joyce Beatty",
+          "party": "Democratic"
+        },
+        {
+          "name": "Cleophus Dulaney",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Joshua Kolasinski, Jim Jordan, Tracey Tackett, Tamie Wilson",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joshua Kolasinski",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jim Jordan",
+          "party": "Republican"
+        },
+        {
+          "name": "Tracey Tackett",
+          "party": "Independent"
+        },
+        {
+          "name": "Tamie Wilson",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Brian Shaver, Bob Latta",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brian Shaver",
+          "party": "Democratic"
+        },
+        {
+          "name": "Bob Latta",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Elizabeth Kirtley, Michael Rulli",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Elizabeth Kirtley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Rulli",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Brian Poindexter, Max Miller",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Brian Poindexter",
+          "party": "Democratic"
+        },
+        {
+          "name": "Max Miller",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "8": {
-      "Candidates": "Vanessa Enoch, Warren Davidson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Vanessa Enoch",
+          "party": "Democratic"
+        },
+        {
+          "name": "Warren Davidson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Marcy Kaptur, Derek Merrin, Matthew Althaus",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Marcy Kaptur",
+          "party": "Democratic"
+        },
+        {
+          "name": "Derek Merrin",
+          "party": "Republican"
+        },
+        {
+          "name": "Matthew Althaus",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "10": {
-      "Candidates": "Kristina Knickerbocker, Mike Turner, Thomas McMasters",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kristina Knickerbocker",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Turner",
+          "party": "Republican"
+        },
+        {
+          "name": "Thomas McMasters",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Shontel Brown, Mike Kirchner",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Shontel Brown",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Kirchner",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Jerrad Christian, Troy Balderson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jerrad Christian",
+          "party": "Democratic"
+        },
+        {
+          "name": "Troy Balderson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Emilia Sykes, Carey Coleman",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Emilia Sykes",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carey Coleman",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Maria Jukic, David Joyce",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maria Jukic",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Joyce",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "15": {
-      "Candidates": "Don Leonard, Mike Carey, Brennan Barrington",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Don Leonard",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Carey",
+          "party": "Republican"
+        },
+        {
+          "name": "Brennan Barrington",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Oklahoma": {
     "1": {
-      "Candidates": "John Croisant, Mark Tedford",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "John Croisant",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mark Tedford",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Brandon Wade, Josh Brecheen, Ronnie Hopkins",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brandon Wade",
+          "party": "Democratic"
+        },
+        {
+          "name": "Josh Brecheen",
+          "party": "Republican"
+        },
+        {
+          "name": "Ronnie Hopkins",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Suzie Byrd, Frank Lucas",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Suzie Byrd",
+          "party": "Democratic"
+        },
+        {
+          "name": "Frank Lucas",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Mitchell Jacob, Tom Cole, Rocco Bonacci",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mitchell Jacob",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tom Cole",
+          "party": "Republican"
+        },
+        {
+          "name": "Rocco Bonacci",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Jena Nelson, Stephanie Bice, Robert Henri, Austin Nieves",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jena Nelson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Stephanie Bice",
+          "party": "Republican"
+        },
+        {
+          "name": "Robert Henri",
+          "party": "Independent"
+        },
+        {
+          "name": "Austin Nieves",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Oregon": {
     "1": {
-      "Candidates": "Suzanne Bonamici, Barbara Kahl",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Suzanne Bonamici",
+          "party": "Democratic"
+        },
+        {
+          "name": "Barbara Kahl",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Chris Beck, Cliff Bentz",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Beck",
+          "party": "Democratic"
+        },
+        {
+          "name": "Cliff Bentz",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Maxine Dexter, Loran Ayles",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Maxine Dexter",
+          "party": "Democratic"
+        },
+        {
+          "name": "Loran Ayles",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Val Hoyle, Monique DeSpain, Justin Filip",
-      "Party": "Democratic, Republican, Pacific Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Val Hoyle",
+          "party": "Democratic"
+        },
+        {
+          "name": "Monique DeSpain",
+          "party": "Republican"
+        },
+        {
+          "name": "Justin Filip",
+          "party": "Pacific Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Janelle Bynum, Patti Adair, Andrea Townsend",
-      "Party": "Democratic, Republican, Pacific Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Janelle Bynum",
+          "party": "Democratic"
+        },
+        {
+          "name": "Patti Adair",
+          "party": "Republican"
+        },
+        {
+          "name": "Andrea Townsend",
+          "party": "Pacific Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Andrea Salinas, David Russ",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Andrea Salinas",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Russ",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Pennsylvania": {
     "1": {
-      "Candidates": "Bob Harvie, Brian Fitzpatrick",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bob Harvie",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brian Fitzpatrick",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Brendan Boyle, Jessica Arriaga",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brendan Boyle",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jessica Arriaga",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Chris Rabb, Dennis Mahoney",
-      "Party": "Democratic, The Independent Party",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Rabb",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dennis Mahoney",
+          "party": "The Independent Party"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Madeleine Dean, Aurora Stuski",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Madeleine Dean",
+          "party": "Democratic"
+        },
+        {
+          "name": "Aurora Stuski",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Mary Gay Scanlon, Nicholas Manganaro",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mary Gay Scanlon",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nicholas Manganaro",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Chrissy Houlahan, Marty Young",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chrissy Houlahan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Marty Young",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Bob Brooks, Ryan Mackenzie",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bob Brooks",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ryan Mackenzie",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Paige Cognetti, Rob Bresnahan",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Paige Cognetti",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rob Bresnahan",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "9": {
-      "Candidates": "Rachel Wallace, Dan Meuser",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rachel Wallace",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dan Meuser",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Janelle Stelson, Scott Perry",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Janelle Stelson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott Perry",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Nancy Mannion, Lloyd Smucker",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nancy Mannion",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lloyd Smucker",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Summer Lee, James Hayes",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Summer Lee",
+          "party": "Democratic"
+        },
+        {
+          "name": "James Hayes",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Beth Farnham, John Joyce",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Beth Farnham",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Joyce",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Ian Bradstock, Guy Reschenthaler",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ian Bradstock",
+          "party": "Democratic"
+        },
+        {
+          "name": "Guy Reschenthaler",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "15": {
-      "Candidates": "Ray Bilger, Glenn \"G.T.\" Thompson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ray Bilger",
+          "party": "Democratic"
+        },
+        {
+          "name": "Glenn \"G.T.\" Thompson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "16": {
-      "Candidates": "Justin Wagner, Mike Kelly",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Justin Wagner",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Kelly",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "17": {
-      "Candidates": "Chris Deluzio, Tony Guy",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chris Deluzio",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tony Guy",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Rhode Island": {
     "1": {
-      "Candidates": "Gabe Amo, Kellie Keenan, Pedro DeSouza",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Gabe Amo",
+          "party": "Democratic"
+        },
+        {
+          "name": "Kellie Keenan",
+          "party": "Republican"
+        },
+        {
+          "name": "Pedro DeSouza",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Seth Magaziner, Vic Mellor",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Seth Magaziner",
+          "party": "Democratic"
+        },
+        {
+          "name": "Vic Mellor",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "South Carolina": {
     "1": {
-      "Candidates": "Nancy Lacore, Jenny Costa Honeycutt, Bill Reeside Jr., Margo Ellis",
-      "Party": "Democratic, Republican, Libertarian, Alliance",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nancy Lacore",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jenny Costa Honeycutt",
+          "party": "Republican"
+        },
+        {
+          "name": "Bill Reeside Jr.",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Margo Ellis",
+          "party": "Alliance"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Zyon Khalifa, Joe Wilson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Zyon Khalifa",
+          "party": "Democratic"
+        },
+        {
+          "name": "Joe Wilson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Eunice Lehmacher, Sheri Biggs",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eunice Lehmacher",
+          "party": "Democratic"
+        },
+        {
+          "name": "Sheri Biggs",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Courtney McClain, William Timmons",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Courtney McClain",
+          "party": "Democratic"
+        },
+        {
+          "name": "William Timmons",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Mallory Dittmer, Wes Climer",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mallory Dittmer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Wes Climer",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Jim Clyburn, John Peterson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jim Clyburn",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Peterson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "John Vincent, Russell Fry",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "John Vincent",
+          "party": "Democratic"
+        },
+        {
+          "name": "Russell Fry",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "South Dakota": {
     "1": {
-      "Candidates": "Nikki Gronli, Marty Jackley",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Nikki Gronli",
+          "party": "Democratic"
+        },
+        {
+          "name": "Marty Jackley",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Tennessee": {
     "1": {
-      "Candidates": "Kristi Burke, Diana Harshbarger, Joshua Ashburn, Richard Baker, Chris Campbell, Billy Cody, Tyler McClain",
-      "Party": "Democratic, Republican, Independent, Independent, Independent, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kristi Burke",
+          "party": "Democratic"
+        },
+        {
+          "name": "Diana Harshbarger",
+          "party": "Republican"
+        },
+        {
+          "name": "Joshua Ashburn",
+          "party": "Independent"
+        },
+        {
+          "name": "Richard Baker",
+          "party": "Independent"
+        },
+        {
+          "name": "Chris Campbell",
+          "party": "Independent"
+        },
+        {
+          "name": "Billy Cody",
+          "party": "Independent"
+        },
+        {
+          "name": "Tyler McClain",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Michaela Barnett, Tim Burchett, Bruce Fine, Adam Heimerman",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Michaela Barnett",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tim Burchett",
+          "party": "Republican"
+        },
+        {
+          "name": "Bruce Fine",
+          "party": "Independent"
+        },
+        {
+          "name": "Adam Heimerman",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Anna Golladay, Chuck Fleischmann, Mary Jean Howard-Hill, Rodney King, Donnie Ownby, Edward Roland V",
-      "Party": "Democratic, Republican, Independent, Independent, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Anna Golladay",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chuck Fleischmann",
+          "party": "Republican"
+        },
+        {
+          "name": "Mary Jean Howard-Hill",
+          "party": "Independent"
+        },
+        {
+          "name": "Rodney King",
+          "party": "Independent"
+        },
+        {
+          "name": "Donnie Ownby",
+          "party": "Independent"
+        },
+        {
+          "name": "Edward Roland V",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Victoria Broderick, Scott DesJarlais, Jacob Anders, Clay Faircloth",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Victoria Broderick",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott DesJarlais",
+          "party": "Republican"
+        },
+        {
+          "name": "Jacob Anders",
+          "party": "Independent"
+        },
+        {
+          "name": "Clay Faircloth",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Chaz Molder, Charlie Hatcher, James Johnson, Miche\u00e1l O'Leary",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chaz Molder",
+          "party": "Democratic"
+        },
+        {
+          "name": "Charlie Hatcher",
+          "party": "Republican"
+        },
+        {
+          "name": "James Johnson",
+          "party": "Independent"
+        },
+        {
+          "name": "Miche\u00e1l O'Leary",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Mike Croley, Johnny Garrett, Chris Monday, Angus Purdy",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mike Croley",
+          "party": "Democratic"
+        },
+        {
+          "name": "Johnny Garrett",
+          "party": "Republican"
+        },
+        {
+          "name": "Chris Monday",
+          "party": "Independent"
+        },
+        {
+          "name": "Angus Purdy",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Darden Copeland, Matt Van Epps, Andrew Koontz, Lowell Reynolds",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Darden Copeland",
+          "party": "Democratic"
+        },
+        {
+          "name": "Matt Van Epps",
+          "party": "Republican"
+        },
+        {
+          "name": "Andrew Koontz",
+          "party": "Independent"
+        },
+        {
+          "name": "Lowell Reynolds",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Heidi Kuhn, David Kustoff, Adam Austill, Wells Blankenship, Antonio Futch, Pamela Moses, Horace Taylor, Henry Ward III",
-      "Party": "Democratic, Republican, Independent, Independent, Independent, Independent, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Heidi Kuhn",
+          "party": "Democratic"
+        },
+        {
+          "name": "David Kustoff",
+          "party": "Republican"
+        },
+        {
+          "name": "Adam Austill",
+          "party": "Independent"
+        },
+        {
+          "name": "Wells Blankenship",
+          "party": "Independent"
+        },
+        {
+          "name": "Antonio Futch",
+          "party": "Independent"
+        },
+        {
+          "name": "Pamela Moses",
+          "party": "Independent"
+        },
+        {
+          "name": "Horace Taylor",
+          "party": "Independent"
+        },
+        {
+          "name": "Henry Ward III",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Justin Pearson, Brent Taylor, Dennis Clark, Michelle Davis Head",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Justin Pearson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brent Taylor",
+          "party": "Republican"
+        },
+        {
+          "name": "Dennis Clark",
+          "party": "Independent"
+        },
+        {
+          "name": "Michelle Davis Head",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Texas": {
     "1": {
-      "Candidates": "Yolanda Prince, Nathaniel Moran",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Yolanda Prince",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nathaniel Moran",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Shaun Finnie, Steve Toth",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Shaun Finnie",
+          "party": "Democratic"
+        },
+        {
+          "name": "Steve Toth",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Evan Hunt, Keith Self",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Evan Hunt",
+          "party": "Democratic"
+        },
+        {
+          "name": "Keith Self",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jason Pearce, Pat Fallon",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jason Pearce",
+          "party": "Democratic"
+        },
+        {
+          "name": "Pat Fallon",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Chelsey Hockett, Lance Gooden",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Chelsey Hockett",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lance Gooden",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Danny Minton, Jake Ellzey",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Danny Minton",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jake Ellzey",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Lizzie Fletcher, Alexander Hale, Espoir Ngabo",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lizzie Fletcher",
+          "party": "Democratic"
+        },
+        {
+          "name": "Alexander Hale",
+          "party": "Republican"
+        },
+        {
+          "name": "Espoir Ngabo",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Laura Jones, Jessica Steinmann",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Laura Jones",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jessica Steinmann",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Letty Gutierrez, Alex Mealer",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Letty Gutierrez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Alex Mealer",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Caitlin Rourk, Chris Gober",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Caitlin Rourk",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Gober",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "Claire Reynolds, August Pfluger",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Claire Reynolds",
+          "party": "Democratic"
+        },
+        {
+          "name": "August Pfluger",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "12": {
-      "Candidates": "Heli Rodriguez Prilliman, Craig Goldman",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Heli Rodriguez Prilliman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Craig Goldman",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "13": {
-      "Candidates": "Mark Nair, Ronny Jackson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mark Nair",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ronny Jackson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "14": {
-      "Candidates": "Thurman Bartie, Randy Weber",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Thurman Bartie",
+          "party": "Democratic"
+        },
+        {
+          "name": "Randy Weber",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "15": {
-      "Candidates": "Bobby Pulido, Monica De La Cruz",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Bobby Pulido",
+          "party": "Democratic"
+        },
+        {
+          "name": "Monica De La Cruz",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "16": {
-      "Candidates": "Veronica Escobar, Adam Bauman",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Veronica Escobar",
+          "party": "Democratic"
+        },
+        {
+          "name": "Adam Bauman",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "17": {
-      "Candidates": "Casey Shepard, Pete Sessions",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Casey Shepard",
+          "party": "Democratic"
+        },
+        {
+          "name": "Pete Sessions",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "18": {
-      "Candidates": "Christian Menefee, Ronald Whitfield",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Christian Menefee",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ronald Whitfield",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "19": {
-      "Candidates": "Kyle Rable, Tom Sell",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kyle Rable",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tom Sell",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "20": {
-      "Candidates": "Joaquin Castro, Edgardo B\u00e1ez",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joaquin Castro",
+          "party": "Democratic"
+        },
+        {
+          "name": "Edgardo B\u00e1ez",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "21": {
-      "Candidates": "Kristin Hook, Mark Teixeira",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kristin Hook",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mark Teixeira",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "22": {
-      "Candidates": "Marquette Greene-Scott, Trever Nehls",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Marquette Greene-Scott",
+          "party": "Democratic"
+        },
+        {
+          "name": "Trever Nehls",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "23": {
-      "Candidates": "Katy Padilla Stout, Brandon Herrera, Ben Mendoza",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Katy Padilla Stout",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brandon Herrera",
+          "party": "Republican"
+        },
+        {
+          "name": "Ben Mendoza",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "24": {
-      "Candidates": "Kevin Burge, Beth Van Duyne",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kevin Burge",
+          "party": "Democratic"
+        },
+        {
+          "name": "Beth Van Duyne",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "25": {
-      "Candidates": "Dione Sims, Roger Williams",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dione Sims",
+          "party": "Democratic"
+        },
+        {
+          "name": "Roger Williams",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "26": {
-      "Candidates": "Steven Shook, Brandon Gill, Phil Gray",
-      "Party": "Democratic, Republican, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Steven Shook",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brandon Gill",
+          "party": "Republican"
+        },
+        {
+          "name": "Phil Gray",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "27": {
-      "Candidates": "Tanya Lloyd, Michael Cloud",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Tanya Lloyd",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Cloud",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "28": {
-      "Candidates": "Henry Cuellar, Tano Tijerina, Marl\u00f3n Dur\u00e1n",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Henry Cuellar",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tano Tijerina",
+          "party": "Republican"
+        },
+        {
+          "name": "Marl\u00f3n Dur\u00e1n",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "29": {
-      "Candidates": "Sylvia Garcia, Martha Fierro",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Sylvia Garcia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Martha Fierro",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "30": {
-      "Candidates": "Frederick Haynes, Everett Jackson",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Frederick Haynes",
+          "party": "Democratic"
+        },
+        {
+          "name": "Everett Jackson",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "31": {
-      "Candidates": "Justin Early, John Carter, Greg Stoker",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Justin Early",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Carter",
+          "party": "Republican"
+        },
+        {
+          "name": "Greg Stoker",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "32": {
-      "Candidates": "Dan Barrios, Jace Yarbrough",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Dan Barrios",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jace Yarbrough",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "33": {
-      "Candidates": "Colin Allred, Patrick Gillespie",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Colin Allred",
+          "party": "Democratic"
+        },
+        {
+          "name": "Patrick Gillespie",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "34": {
-      "Candidates": "Vicente Gonzalez, Eric Flores, Eddie Espinoza, Chris Royal",
-      "Party": "Democratic, Republican, Green, Libertarian",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Vicente Gonzalez",
+          "party": "Democratic"
+        },
+        {
+          "name": "Eric Flores",
+          "party": "Republican"
+        },
+        {
+          "name": "Eddie Espinoza",
+          "party": "Green"
+        },
+        {
+          "name": "Chris Royal",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "35": {
-      "Candidates": "Johnny Garcia, Carlos De La Cruz",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Johnny Garcia",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carlos De La Cruz",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "36": {
-      "Candidates": "Rhonda Hart, Brian Babin",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rhonda Hart",
+          "party": "Democratic"
+        },
+        {
+          "name": "Brian Babin",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "37": {
-      "Candidates": "Greg Casar, Lauren Pe\u00f1a",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Greg Casar",
+          "party": "Democratic"
+        },
+        {
+          "name": "Lauren Pe\u00f1a",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "38": {
-      "Candidates": "Melissa McDonough, Jon Bonck, Alex McMenemy",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Melissa McDonough",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jon Bonck",
+          "party": "Republican"
+        },
+        {
+          "name": "Alex McMenemy",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Utah": {
     "1": {
-      "Candidates": "Ben McAdams, Riley Owen, Jesse West, Elias Montgomery",
-      "Party": "Democratic, Republican, Libertarian, Unaffiliated",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ben McAdams",
+          "party": "Democratic"
+        },
+        {
+          "name": "Riley Owen",
+          "party": "Republican"
+        },
+        {
+          "name": "Jesse West",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Elias Montgomery",
+          "party": "Unaffiliated"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Peter Crosby, Blake Moore, Daniel Cottam, Carlton Bowen, Robert Moesinger",
-      "Party": "Democratic, Republican, Libertarian, Independent American, Unaffiliated",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Peter Crosby",
+          "party": "Democratic"
+        },
+        {
+          "name": "Blake Moore",
+          "party": "Republican"
+        },
+        {
+          "name": "Daniel Cottam",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Carlton Bowen",
+          "party": "Independent American"
+        },
+        {
+          "name": "Robert Moesinger",
+          "party": "Unaffiliated"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Kent Udell, Celeste Maloy, Cassie Easley, Mike Stoddard, Adonis Hooslyn, Ayden Scott",
-      "Party": "Democratic, Republican, Constitution, Libertarian, Unaffiliated, Unaffiliated",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kent Udell",
+          "party": "Democratic"
+        },
+        {
+          "name": "Celeste Maloy",
+          "party": "Republican"
+        },
+        {
+          "name": "Cassie Easley",
+          "party": "Constitution"
+        },
+        {
+          "name": "Mike Stoddard",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Adonis Hooslyn",
+          "party": "Unaffiliated"
+        },
+        {
+          "name": "Ayden Scott",
+          "party": "Unaffiliated"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jonny Larsen, Mike Kennedy, Taylor Wright, Steven Burt",
-      "Party": "Democratic, Republican, Libertarian, Unaffiliated",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jonny Larsen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mike Kennedy",
+          "party": "Republican"
+        },
+        {
+          "name": "Taylor Wright",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Steven Burt",
+          "party": "Unaffiliated"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Vermont": {
     "1": {
-      "Candidates": "Becca Balint, Gerald Malloy, Phoenix Altair, Adam Ortiz, Suz Seymour, Ryan Walton",
-      "Party": "Democratic, Republican, Independent, Independent, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Becca Balint",
+          "party": "Democratic"
+        },
+        {
+          "name": "Gerald Malloy",
+          "party": "Republican"
+        },
+        {
+          "name": "Phoenix Altair",
+          "party": "Independent"
+        },
+        {
+          "name": "Adam Ortiz",
+          "party": "Independent"
+        },
+        {
+          "name": "Suz Seymour",
+          "party": "Independent"
+        },
+        {
+          "name": "Ryan Walton",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Virginia": {
     "1": {
-      "Candidates": "Shannon Taylor, Rob Wittman",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Shannon Taylor",
+          "party": "Democratic"
+        },
+        {
+          "name": "Rob Wittman",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "2": {
-      "Candidates": "Elaine Luria, Jen Kiggans, Matt Baker, Bishop Staten",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Elaine Luria",
+          "party": "Democratic"
+        },
+        {
+          "name": "Jen Kiggans",
+          "party": "Republican"
+        },
+        {
+          "name": "Matt Baker",
+          "party": "Independent"
+        },
+        {
+          "name": "Bishop Staten",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "3": {
-      "Candidates": "Bobby Scott, Edwin Rivera, Makiba Gaines, Steve Woll",
-      "Party": "Democratic, Republican, Independent, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Bobby Scott",
+          "party": "Democratic"
+        },
+        {
+          "name": "Edwin Rivera",
+          "party": "Republican"
+        },
+        {
+          "name": "Makiba Gaines",
+          "party": "Independent"
+        },
+        {
+          "name": "Steve Woll",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "Jennifer McClellan, Robert Murray, Joan Andrews Bell",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Jennifer McClellan",
+          "party": "Democratic"
+        },
+        {
+          "name": "Robert Murray",
+          "party": "Republican"
+        },
+        {
+          "name": "Joan Andrews Bell",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Tom Perriello, John McGuire, Cooke Harvey",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Tom Perriello",
+          "party": "Democratic"
+        },
+        {
+          "name": "John McGuire",
+          "party": "Republican"
+        },
+        {
+          "name": "Cooke Harvey",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Beth Macy, Ben Cline",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Beth Macy",
+          "party": "Democratic"
+        },
+        {
+          "name": "Ben Cline",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Eugene Vindman, Doug Ollivant, Alaha Ahrar, Joshua Ertle, Taner Lopez, Randall Terry",
-      "Party": "Democratic, Republican, Independent, Independent, Libertarian, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Eugene Vindman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Doug Ollivant",
+          "party": "Republican"
+        },
+        {
+          "name": "Alaha Ahrar",
+          "party": "Independent"
+        },
+        {
+          "name": "Joshua Ertle",
+          "party": "Independent"
+        },
+        {
+          "name": "Taner Lopez",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Randall Terry",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Don Beyer, Tony Sabio, Shelly Arnoldi, Tim Sharman",
-      "Party": "Democratic, Republican, Libertarian, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Don Beyer",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tony Sabio",
+          "party": "Republican"
+        },
+        {
+          "name": "Shelly Arnoldi",
+          "party": "Libertarian"
+        },
+        {
+          "name": "Tim Sharman",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Joy Powers, Morgan Griffith",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Joy Powers",
+          "party": "Democratic"
+        },
+        {
+          "name": "Morgan Griffith",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Suhas Subramanyam, Dave Beckwith, Ahsen Malik",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Suhas Subramanyam",
+          "party": "Democratic"
+        },
+        {
+          "name": "Dave Beckwith",
+          "party": "Republican"
+        },
+        {
+          "name": "Ahsen Malik",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "11": {
-      "Candidates": "James Walkinshaw, Arthur Purves, Dianne Blais",
-      "Party": "Democratic, Republican, Green",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "James Walkinshaw",
+          "party": "Democratic"
+        },
+        {
+          "name": "Arthur Purves",
+          "party": "Republican"
+        },
+        {
+          "name": "Dianne Blais",
+          "party": "Green"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Washington": {
     "1": {
-      "Candidates": "Suzan DelBene, Mary Silva",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Suzan DelBene",
+          "party": "Democratic"
+        },
+        {
+          "name": "Mary Silva",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Rick Larsen, Edwin Feller",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rick Larsen",
+          "party": "Democratic"
+        },
+        {
+          "name": "Edwin Feller",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Marie Gluesenkamp Perez, John Braun",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Marie Gluesenkamp Perez",
+          "party": "Democratic"
+        },
+        {
+          "name": "John Braun",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "4": {
-      "Candidates": "John Duresky, Amanda McKinney",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "John Duresky",
+          "party": "Democratic"
+        },
+        {
+          "name": "Amanda McKinney",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Carmela Conroy, Michael Baumgartner",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Carmela Conroy",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Baumgartner",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Emily Randall, Teresa Fox",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Emily Randall",
+          "party": "Democratic"
+        },
+        {
+          "name": "Teresa Fox",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Pramila Jayapal, Nirav Sheth",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Pramila Jayapal",
+          "party": "Democratic"
+        },
+        {
+          "name": "Nirav Sheth",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Kim Schrier, Spencer Meline",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Kim Schrier",
+          "party": "Democratic"
+        },
+        {
+          "name": "Spencer Meline",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "9": {
-      "Candidates": "Adam Smith, Doug Basler",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Adam Smith",
+          "party": "Democratic"
+        },
+        {
+          "name": "Doug Basler",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "10": {
-      "Candidates": "Marilyn Strickland, Chris Chung",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Marilyn Strickland",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chris Chung",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "West Virginia": {
     "1": {
-      "Candidates": "Vince George, Carol Miller, Belinda Fox-Spencer",
-      "Party": "Democratic, Republican, Constitution",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Vince George",
+          "party": "Democratic"
+        },
+        {
+          "name": "Carol Miller",
+          "party": "Republican"
+        },
+        {
+          "name": "Belinda Fox-Spencer",
+          "party": "Constitution"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Ace Parsi, Riley Moore",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Ace Parsi",
+          "party": "Democratic"
+        },
+        {
+          "name": "Riley Moore",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Wisconsin": {
     "1": {
-      "Candidates": "Mitchell Berman, Bryan Steil",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mitchell Berman",
+          "party": "Democratic"
+        },
+        {
+          "name": "Bryan Steil",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "2": {
-      "Candidates": "Mark Pocan",
-      "Party": "Democratic",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Mark Pocan",
+          "party": "Democratic"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "3": {
-      "Candidates": "Rebecca Cooke, Derrick Van Orden",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "TRUE"
+      "candidates": [
+        {
+          "name": "Rebecca Cooke",
+          "party": "Democratic"
+        },
+        {
+          "name": "Derrick Van Orden",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "TRUE"
     },
     "4": {
-      "Candidates": "Gwen Moore, Tim Rogers, Arthur Burkes",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Gwen Moore",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tim Rogers",
+          "party": "Republican"
+        },
+        {
+          "name": "Arthur Burkes",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "5": {
-      "Candidates": "Andrew Beck, Scott Fitzgerald",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Andrew Beck",
+          "party": "Democratic"
+        },
+        {
+          "name": "Scott Fitzgerald",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "6": {
-      "Candidates": "Brad Smith, Glenn Grothman, Michael Thurow",
-      "Party": "Democratic, Republican, Independent",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Brad Smith",
+          "party": "Democratic"
+        },
+        {
+          "name": "Glenn Grothman",
+          "party": "Republican"
+        },
+        {
+          "name": "Michael Thurow",
+          "party": "Independent"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "7": {
-      "Candidates": "Fred Clark, Michael Alfonso",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Fred Clark",
+          "party": "Democratic"
+        },
+        {
+          "name": "Michael Alfonso",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     },
     "8": {
-      "Candidates": "Rick Crosson, Tony Wied",
-      "Party": "Democratic, Republican",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Rick Crosson",
+          "party": "Democratic"
+        },
+        {
+          "name": "Tony Wied",
+          "party": "Republican"
+        }
+      ],
+      "tossup": "FALSE"
     }
   },
   "Wyoming": {
     "1": {
-      "Candidates": "Lisa Kinney, Chuck Gray, Jeff Haggit, Shawn Johnson",
-      "Party": "Democratic, Republican, Constitution, Libertarian",
-      "Toss-Up": "FALSE"
+      "candidates": [
+        {
+          "name": "Lisa Kinney",
+          "party": "Democratic"
+        },
+        {
+          "name": "Chuck Gray",
+          "party": "Republican"
+        },
+        {
+          "name": "Jeff Haggit",
+          "party": "Constitution"
+        },
+        {
+          "name": "Shawn Johnson",
+          "party": "Libertarian"
+        }
+      ],
+      "tossup": "FALSE"
     }
   }
 };

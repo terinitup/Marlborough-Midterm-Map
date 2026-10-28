@@ -1,22 +1,6 @@
 let districts = [];
 const allDistricts = {};
-let district_data;
 
-
-
-
-let data = {
-	0: "One",
-	1: "Two",
-	2: "Three",
-	3: "Four",
-	4: "Five",
-	5: "Six",
-	6: "Seven",
-	7: "Eight",
-	8: "Nine",
-	9: "Ten"
-}
 
 function createDistricts(){
     for (let state in rectangle_list){
@@ -29,10 +13,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   initRectangleList()
   createDistricts();
-  
-  district_data = {
-  "California": CA_district_data
-};
 
 }
 
@@ -195,18 +175,18 @@ function draw() {
     
   
 	
-	if(hovered){
+	if (hovered) {
 		let candidates = [];
 		let tossup = false;
 		let stateData = district_data[hovered.stateName];
-		
-		if (stateData && stateData[hovered.ID]){
-        candidates = stateData[hovered.ID].candidates;
-        if(stateData[hovered.ID].tossup){
-			tossup = true;
+
+		if (stateData && stateData[hovered.ID]) {
+			candidates = stateData[hovered.ID].candidates || [];
+			if (stateData[hovered.ID]["tossup"] == "TRUE") {
+				tossup = true;
 			}
 		}
-			
+
 		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup);
 		box.display();
     }
@@ -214,4 +194,5 @@ function draw() {
     let scoreboard = new ScoreBoard();
     scoreboard.display();
 }
+
 
