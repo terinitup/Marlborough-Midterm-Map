@@ -14,7 +14,7 @@ class District {
         noStroke();
 
         if(this.stateName in vote_data)
-        {
+        {	
 
             if(vote_data[this.stateName][this.ID] == 1){
                 this.fill = color(0, 174, 243);

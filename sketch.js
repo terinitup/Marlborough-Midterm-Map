@@ -114,8 +114,9 @@ function draw() {
     
     fill(0);
     noStroke();
+    textStyle(NORMAL);
     textFont("Serif");
-    textSize(14);
+    textSize(12);
     textAlign(LEFT, BOTTOM);
     
     
@@ -209,5 +210,8 @@ function draw() {
 		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup);
 		box.display();
     }
+    
+    let scoreboard = new ScoreBoard();
+    scoreboard.display();
 }
 

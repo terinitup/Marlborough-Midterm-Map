@@ -84,7 +84,7 @@ class InformationBox{
 		fill(120);
 		textSize(14);
 		textFont('Serif');
-		textStyle(BOLD)
+		textStyle(BOLD);
 		text("CANDIDATE", this.x+12, this.y+58);
 		textAlign(RIGHT, TOP);
 		text("STATUS", this.x +this.w-12, this.y+58);
