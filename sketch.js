@@ -178,6 +178,7 @@ function draw() {
 	if (hovered) {
 		let candidates = [];
 		let tossup = false;
+		let result = 0;         
 		let stateData = district_data[hovered.stateName];
 
 		if (stateData && stateData[hovered.ID]) {
@@ -186,8 +187,12 @@ function draw() {
 				tossup = true;
 			}
 		}
+		
+		if (vote_data[hovered.stateName] && vote_data[hovered.stateName][hovered.ID]) {
+			result = vote_data[hovered.stateName][hovered.ID];
+		}
 
-		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup);
+		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup, result);
 		box.display();
     }
     

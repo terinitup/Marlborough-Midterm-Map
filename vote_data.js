@@ -9,12 +9,14 @@ let vote_data = {
         7: 1
     },
     "Alaska": {
+		
     },
     "Arizona": {
     },
     "Arkansas": {
     },
     'California': {
+      
     },
     'Colorado': {
     },
