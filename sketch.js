@@ -69,12 +69,12 @@ function draw() {
     noFill();
 
     for (let state in state_data) {
-        stroke(150, 150, 150);
+        stroke(150);
         strokeWeight(1);
         draw_state(state, transform_coordinates);
     }
 
-        stroke(0);
+        stroke(150);
         strokeWeight(1);
         draw_state("Alaska", alaska_coordinates);    
         draw_state("Hawaii", hawaii_coordinates);

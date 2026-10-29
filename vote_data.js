@@ -1,4 +1,7 @@
 let vote_data = {
+    // 1 = dem
+    // 2 = rep
+    // 3 = other
     "Alabama": {
         1: 1,
         2: 1,  
