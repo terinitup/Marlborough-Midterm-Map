@@ -5,8 +5,25 @@
     const centerX = mapWidth * 453 / 900;
 	let repRectX 
 
-	let dVotes = 217;
-	let rVotes = 217;
+	let dVotes = 0;
+	let rVotes = 0;
+	let iVotes = 0;
+
+	for (const state in vote_data) {
+		for (const district in vote_data[state]) {
+			const value = vote_data[state][district];
+
+			if (value === 1) {
+			dVotes++;
+			} else if (value === 2) {
+			rVotes++;
+			} else if (value === 3) {
+			iVotes++;
+			}
+		}
+	}
+	console.log(rVotes);
+	console.log(dVotes);
 
 	let demWidth;
 	let repWidth;
