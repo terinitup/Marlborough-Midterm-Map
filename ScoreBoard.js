@@ -1,27 +1,27 @@
-    const fullBar = mapWidth * (440 / 900) * 2;
-	const rectX = mapWidth * 15 / 900;
+    const demRectX = 0;
     const rectY = mapHeight * 60 / 650;
 	const rectH = mapHeight * 25 / 650;
-    const centerX = mapWidth * 453 / 900;
+    const centerX = mapWidth/2;
+	const fullBar = mapWidth;
 	let repRectX 
 
-	let dVotes = 0;
-	let rVotes = 0;
+	let dVotes = 230;
+	let rVotes = 205;
 	let iVotes = 0;
 
-	for (const state in vote_data) {
-		for (const district in vote_data[state]) {
-			const value = vote_data[state][district];
+	// for (const state in vote_data) {
+	// 	for (const district in vote_data[state]) {
+	// 		const value = vote_data[state][district];
 
-			if (value === 1) {
-			dVotes++;
-			} else if (value === 2) {
-			rVotes++;
-			} else if (value === 3) {
-			iVotes++;
-			}
-		}
-	}
+	// 		if (value === 1) {
+	// 		dVotes++;
+	// 		} else if (value === 2) {
+	// 		rVotes++;
+	// 		} else if (value === 3) {
+	// 		iVotes++;
+	// 		}
+	// 	}
+	// }
 	console.log(rVotes);
 	console.log(dVotes);
 
@@ -34,7 +34,7 @@ class ScoreBoard {
 	    
 	demWidth = map(dVotes, 0, 435, 0, fullBar);
 	repWidth = map(rVotes, 0, 435, 0, fullBar);
-	repRectX = rectX + demWidth;
+	repRectX = demRectX + demWidth;
 
   }
   
@@ -50,7 +50,7 @@ class ScoreBoard {
     
     textSize(25);
     textStyle(BOLD);
-    text('0', mapWidth * 17 / 900, mapHeight * 12 / 650);
+    text(dVotes, mapWidth * 17 / 900, mapHeight * 12 / 650);
     
     textStyle(NORMAL);
     textAlign(RIGHT, TOP);
@@ -60,19 +60,19 @@ class ScoreBoard {
     
     textSize(25);
     textStyle(BOLD);
-    text('0', mapWidth * 890 / 900, mapHeight * 12 / 650);
+    text(rVotes, mapWidth * 890 / 900, mapHeight * 12 / 650);
     
     // rectangles
     noStroke();
     fill(0, 174, 243);
-    rect(rectX, rectY, demWidth, rectH);
+    rect(demRectX, rectY, demWidth, rectH);
 
     fill(232, 27, 35);
     rect(repRectX, rectY, repWidth, rectH);
     
     // "218 to win" label and line
     stroke(0);
-    strokeWeight(2);
+    strokeWeight(1);
     line(centerX, mapHeight * 55 / 650, centerX, mapHeight * 85 / 650);
     
     fill(0);
