@@ -44,9 +44,9 @@ class ScoreBoard {
 
     // Democrats and Republicans label
     textAlign(LEFT, TOP);
-    textSize(17);
+    textSize(16);
     textFont('Serif');
-    text('Democrats', mapWidth * 17 / 900, mapHeight * 36 / 650);
+    text('Democrats', mapWidth * 17 / 900, mapHeight * 40 / 650);
     
     textSize(25);
     textStyle(BOLD);
@@ -54,9 +54,9 @@ class ScoreBoard {
     
     textStyle(NORMAL);
     textAlign(RIGHT, TOP);
-    textSize(17);
+    textSize(16);
     textFont('Serif');
-    text('Republicans', mapWidth * 890 / 900, mapHeight * 36 / 650);
+    text('Republicans', mapWidth * 890 / 900, mapHeight * 40 / 650);
     
     textSize(25);
     textStyle(BOLD);
