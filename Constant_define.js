@@ -1,2 +1,2 @@
-let mapWidth = 815;
-let mapHeight = 580;
+let mapWidth = 790;
+let mapHeight = 560;

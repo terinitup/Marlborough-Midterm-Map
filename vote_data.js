@@ -29,6 +29,7 @@ let vote_data = {
         1: 0,
     },
     'California': {
+		
       
     },
     'Colorado': {
