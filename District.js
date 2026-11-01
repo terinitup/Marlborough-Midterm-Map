@@ -12,22 +12,18 @@ class District {
 
     display(){
         noStroke();
+        
+        let w = getWinner(this.stateName, this.ID);
+        if(w != -1){
+			let party  = district_data[this.stateName][this.ID].candidates[w].party;
+			this.fill = partyColor(party);
+		}else{
+			this.fill = color(230);
+		}
+		
+		fill(this.fill);
 
-        if(this.stateName in vote_data)
-        {	
-
-            if(vote_data[this.stateName][this.ID] == 1){
-                this.fill = color(0, 174, 243);
-            }
-            else if(vote_data[this.stateName][this.ID] == 2){
-                this.fill = color(232, 27, 35);
-            }
-            else if(vote_data[this.stateName][this.ID] == 3){
-                this.fill = color(255, 227, 87);
-            }
-        }
-
-         fill(this.fill);
+    
 
         if(this.hover()){
             stroke(0);

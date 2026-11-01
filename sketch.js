@@ -1,6 +1,24 @@
 let districts = [];
 const allDistricts = {};
 
+function isDem(party){
+	return party == "Democratic" || party == "DFL" || party == "Democratic-NPL";
+}
+
+function partyColor(party){
+    if (isDem(party)){
+        return color(0, 174, 243);
+    } else if (party == "Republican"){
+        return color(232, 27, 35);
+    }
+    return color(255, 227, 87);
+}
+
+function getWinner(state, id){
+    return vote_data[state][id];
+}
+
+
 
 function createDistricts(){
     for (let state in rectangle_list){
@@ -176,23 +194,17 @@ function draw() {
   
 	
 	if (hovered) {
-		let candidates = [];
+		let district = district_data[hovered.stateName][hovered.ID];
+		let candidates = district.candidates;
 		let tossup = false;
-		let result = 0;         
-		let stateData = district_data[hovered.stateName];
 
-		if (stateData && stateData[hovered.ID]) {
-			candidates = stateData[hovered.ID].candidates || [];
-			if (stateData[hovered.ID]["tossup"] == "TRUE") {
-				tossup = true;
-			}
-		}
-		
-		if (vote_data[hovered.stateName] && vote_data[hovered.stateName][hovered.ID]) {
-			result = vote_data[hovered.stateName][hovered.ID];
+		if (district.tossup=="TRUE") {
+			tossup = true;
 		}
 
-		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup, result);
+		let winner = getWinner(hovered.stateName, hovered.ID);
+
+		let box = new InformationBox(mouseX + 15, mouseY + 15, hovered.stateName, hovered.ID, candidates, tossup, winner);
 		box.display();
     }
     

@@ -1,5 +1,5 @@
 class InformationBox{
-	constructor(x, y, state, districtNum, candidates, tossup, result){
+	constructor(x, y, state, districtNum, candidates, tossup, winner){
 		this.x = x;
 		this.y=y;
 		this.w=340;
@@ -9,37 +9,12 @@ class InformationBox{
 		this.districtNum=districtNum;
 		this.candidates=candidates;
 		this.tossup=tossup;
-		this.result=result;
+		this.winner=winner;
 		
 	}
 	
-	isDem(party){
-		return party == "Democratic" || party == "DFL" || party == "Democratic-NPL";
-	}
-	
-	resultColor(){
-		if (this.result == 1){
-			return color(0, 174, 243);
-		} else if (this.result == 2){
-			return color(232, 27, 35);
-		} else if (this.result == 3){
-			return color(255, 227, 87);
-		}
-		return color(180);
-	}
-	
-		partyColor(party){
-		if (this.isDem(party)){
-		return color(0, 174, 243);
-	} else if (party == "Republican"){
-		return color(232, 27, 35);
-	}
-	return color(255, 227, 87);
-	}
-	
-	
 	partyAbbrev(party) {
-		if (this.isDem(party)){
+		if (isDem(party)){
 		return "DEM";
 	} else if (party == "Republican"){
 		return "GOP";
@@ -48,16 +23,6 @@ class InformationBox{
 	}
 	}
 	
-	isLeading(c){
-		if (this.result == 1){
-			return this.isDem(c.party);
-		} else if (this.result == 2){
-			return c.party == "Republican";
-		} else if (this.result == 3){
-			return !this.isDem(c.party) && c.party != "Republican";
-		}
-		return false;
-	}
 	
 	display(){
 		push();
@@ -72,15 +37,19 @@ class InformationBox{
 		
 		//accent bar
 		noStroke();
-		fill(this.resultColor());
+		if (this.winner != -1){
+			fill(partyColor(this.candidates[this.winner].party));
+		} else {
+			fill(180);
+		}
 		rect(this.x, this.y, this.w, 6);
 		
+	
 		//Title
 		fill(0);
-		textAlign(LEFT, TOP);
 		textSize(15);
 		textFont('Serif');
-		 textStyle(BOLD);
+		textStyle(BOLD);
 		text(this.state.toUpperCase() + " DISTRICT " + this.districtNum, this.x + 10, this.y +16);
 		
 		// "AP certified results" in the top riht 
@@ -96,11 +65,14 @@ class InformationBox{
 		if (this.tossup){
 			fill(133, 79, 11);
 			textSize(12);
+			textStyle(NORMAL);
 			text("* Toss-up race", this.x + 12, this.y + 36);
 		}
 		
+		//column headers
 		fill(120);
 		textSize(11);
+		textStyle(BOLD);
 		textFont('Serif');
 		textStyle(BOLD);
 		text("CANDIDATE", this.x + 12, this.y + 54);
@@ -109,7 +81,8 @@ class InformationBox{
 		textAlign(LEFT, TOP);
 		
 		stroke(220);
-		line(this.x + 12, this.y + 70, this.x + this.w - 12, this.y + 72);		noStroke();
+		line(this.x + 12, this.y + 70, this.x + this.w - 12, this.y + 72);		
+		noStroke();
 		
 		//Candidates
 		for(let i = 0; i <this.candidates.length; i++){
@@ -117,8 +90,8 @@ class InformationBox{
 			let rowY = this.y + 76 + i * 28;			
 			
 			//showing a colored square (blue or red) if candidate is leading, and a line if not
-			fill(this.partyColor(c.party));
-			if (this.isLeading(c)){
+			fill(partyColor(c.party));
+			if (i==this.winner){
 				rect(this.x +12, rowY, 16, 16);
 				textStyle(BOLD);
 			}else{
@@ -140,10 +113,10 @@ class InformationBox{
 			//status
 			textStyle(NORMAL);
 			textAlign(RIGHT, TOP);
-			if (this.isLeading(c)){
-				fill(this.partyColor(c.party));
+			if (i == this.winner){
+				fill(partyColor(c.party));
 				text("Winner", this.x + this.w -12, rowY +1);
-			} else if (this.result == 0){
+			} else if (this.winner == -1){
 				fill(170);
 				text("-", this.x +this.w-12, rowY+1);
 			}
