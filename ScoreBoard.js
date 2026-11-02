@@ -13,12 +13,15 @@
 		for (const district in vote_data[state]) {
 			const value = vote_data[state][district];
 
-			if (value === 1) {
-			dVotes++;
-			} else if (value === 2) {
-			rVotes++;
-			} else if (value === 3) {
-			iVotes++;
+			if (value === -1 ) continue;
+
+			const party = district_data[state][district]["candidates"][value]["party"];
+			if(party === "Democratic"){
+				dVotes++;
+			} else if(party === "Republican"){
+				rVotes++;
+			} else {
+				iVotes++;
 			}
 		}
 	}
