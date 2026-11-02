@@ -18,11 +18,11 @@ class CreditBox{
 		
 		noStroke();
 		fill(0);
-		textAlign(RIGHT);
+		textAlign(RIGHT, TOP);
 		textFont('Serif');
 		textSize(13);
 		textStyle(NORMAL);
-		textAlign(RIGHT);
+		textAlign(RIGHT, TOP);
 		text('Credits', this.x, this.y);
 	
 		if(this.hover()){

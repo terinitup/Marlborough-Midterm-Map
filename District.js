@@ -14,9 +14,12 @@ class District {
         noStroke();
         
         let w = getWinner(this.stateName, this.ID);
+        let district = district_data[this.stateName][this.ID];
+
         if(w != -1){
-			let party  = district_data[this.stateName][this.ID].candidates[w].party;
-			this.fill = partyColor(party);
+			this.fill = partyColor(district.candidates[w].party);
+		 } else if (district.tossup == "TRUE"){
+            this.fill = color(255, 227, 87); 
 		}else{
 			this.fill = color(230);
 		}

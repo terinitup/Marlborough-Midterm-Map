@@ -216,7 +216,7 @@ const district_data = {
           "party": "Green"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "7": {
       "candidates": [
@@ -1098,7 +1098,7 @@ const district_data = {
           "party": "Constitution"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "TRUE"
     },
     "6": {
       "candidates": [
@@ -1165,7 +1165,7 @@ const district_data = {
           "party": "Libertarian"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     }
   },
   "Connecticut": {
@@ -2583,7 +2583,7 @@ const district_data = {
           "party": "Kentucky Party"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "TRUE"
     }
   },
   "Louisiana": {
@@ -4672,7 +4672,7 @@ const district_data = {
           "party": "Libertarian"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "12": {
       "candidates": [
@@ -4869,7 +4869,7 @@ const district_data = {
           "party": "Libertarian"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "10": {
       "candidates": [
@@ -5141,7 +5141,7 @@ const district_data = {
           "party": "Republican"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "TRUE"
     },
     "2": {
       "candidates": [
@@ -5232,7 +5232,7 @@ const district_data = {
           "party": "Republican"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "9": {
       "candidates": [
@@ -5404,7 +5404,7 @@ const district_data = {
           "party": "Alliance"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "TRUE"
     },
     "2": {
       "candidates": [
@@ -6196,7 +6196,7 @@ const district_data = {
           "party": "Libertarian"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "35": {
       "candidates": [
@@ -6209,7 +6209,7 @@ const district_data = {
           "party": "Republican"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "TRUE"
     },
     "36": {
       "candidates": [
@@ -6417,7 +6417,7 @@ const district_data = {
           "party": "Independent"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "3": {
       "candidates": [
@@ -6783,7 +6783,7 @@ const district_data = {
           "party": "Republican"
         }
       ],
-      "tossup": "TRUE"
+      "tossup": "FALSE"
     },
     "4": {
       "candidates": [
