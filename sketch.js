@@ -1,5 +1,6 @@
 let districts = [];
 const allDistricts = {};
+let creditbox;
 
 function isDem(party){
 	return party == "Democratic" || party == "DFL" || party == "Democratic-NPL";
@@ -31,6 +32,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   initRectangleList()
   createDistricts();
+  creditbox = new CreditBox();
 
 }
 
@@ -83,6 +85,16 @@ function draw_state(name, transformFunction) {
 
 function draw() {
   background(255);
+  
+
+  
+textFont('Serif');
+  textSize(13);
+  textStyle(NORMAL);
+  textAlign(RIGHT);
+  fill(34, 34, 34);
+  text('Results are as reported by The Associated Press at APNews.com', mapWidth - 10, mapHeight-10);
+
 
     noFill();
 
@@ -210,6 +222,7 @@ function draw() {
     
     let scoreboard = new ScoreBoard();
     scoreboard.display();
+     creditbox.display();
 }
 
 
