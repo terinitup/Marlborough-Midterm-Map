@@ -1,9 +1,8 @@
 class District {
-    constructor(ID, stateName, mapPosition, seatPosition) {
+    constructor(ID, stateName, mapPosition) {
         this.ID = ID;
         this.stateName = stateName; 
         this.mapPosition = mapPosition;
-        this.seatPosition = seatPosition;
         this.position = mapPosition;
             this.size = mapWidth/130;
             this.fill = color(230);
@@ -13,7 +12,7 @@ class District {
     display(){
         noStroke();
         
-        let w = getWinner(this.stateName, this.ID);
+        let w = getHouseWinner(this.stateName, this.ID);
         let district = district_data[this.stateName][this.ID];
         let isTossup = (district.tossup == "TRUE");
 
@@ -43,8 +42,6 @@ class District {
             }
 		}
 
-
-    
 
         if(this.hover()){
             stroke(0);

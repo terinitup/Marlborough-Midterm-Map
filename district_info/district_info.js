@@ -11,7 +11,7 @@ const district_data = {
           "party": "Republican"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "FALSE",
     },
     "2": {
       "candidates": [
@@ -24,7 +24,7 @@ const district_data = {
           "party": "Republican"
         }
       ],
-      "tossup": "FALSE"
+      "tossup": "FALSE",
     },
     "3": {
       "candidates": [

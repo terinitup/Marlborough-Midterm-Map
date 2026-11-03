@@ -1,7 +1,7 @@
 class CreditBox{
 	
 	constructor(){
-		this.x = mapWidth - 20; 
+		this.x = mapWidth - 10; 
 		this.y = mapHeight - 40; 
 	}
 	

@@ -59,7 +59,11 @@ class InformationBox{
 		textSize(13);
 		textFont('Serif');
 		textStyle(BOLD);
-		text(this.state.toUpperCase() + " DISTRICT " + this.districtNum, this.x + 10, this.y + 14);
+		if(this.districtNum === undefined){
+			text(this.state.toUpperCase(), this.x + 10, this.y + 14);
+		} else {
+			text(this.state.toUpperCase() + " DISTRICT " + this.districtNum, this.x + 10, this.y + 14);
+		}
 
 		// toss-up note
 		if (this.tossup){

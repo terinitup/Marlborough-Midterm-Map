@@ -1,6 +1,7 @@
-    const rectY = mapHeight * 60 / 650;
+  const demRectX = 0;
+  const rectY = mapHeight * 60 / 650;
 	const rectH = mapHeight * 25 / 650;
-    const centerX = mapWidth/2;
+  const centerX = mapWidth/2;
 	const fullBar = mapWidth;
 
 
@@ -14,7 +15,7 @@ class ScoreBoard {
 
 	for (const state in vote_data) {
 		for (const district in vote_data[state]) {
-			const value = getWinner(state, district);
+			const value = getHouseWinner(state, district);
 
 			if (value === -1 ) continue;
 
