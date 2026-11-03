@@ -225,8 +225,65 @@ function draw() {
                 text(stateMeta_data[state].abbreviation, (left +right)/2, top-2);
             }
 	    }
-    } else if(mapMODE == "SENATE"){
-        // Handle Senate map display here
+          } else if (mapMODE == "SENATE"){
+        for (let state in allDistricts){   // all 50 states
+
+            let s;
+            if (allSenate[state]){
+                s = allSenate[state];   // has a Senate square
+             }else {
+                s = allDistricts[state][floor(allDistricts[state].length / 2)];   // middle House square
+            }
+
+            let left = s.position.x;
+            let right = s.position.x + s.size;
+            let top = s.position.y;
+            let bottom = s.position.y + s.size;
+            
+			if (stateMeta_data[state].abbreviation=="NY"){
+                textAlign(RIGHT, TOP);
+                text(stateMeta_data[state].abbreviation, left-2, top-5);
+                
+           } else if(stateMeta_data[state].abbreviation=="CT"){
+                text(stateMeta_data[state].abbreviation, left-3.5, top+13);
+                
+           } else if(stateMeta_data[state].abbreviation=="MD"){
+                text(stateMeta_data[state].abbreviation, left+10, top+3);
+                
+           } else if(stateMeta_data[state].abbreviation=="VT"){
+                text(stateMeta_data[state].abbreviation, left+4, top+2);
+                
+           } else if(stateMeta_data[state].abbreviation=="HI"){
+                text(stateMeta_data[state].abbreviation, left-3, top+10);
+                
+           } else if(stateMeta_data[state].abbreviation=="CA"){
+                text(stateMeta_data[state].abbreviation, left-35, top-45);
+           
+           } else if(stateMeta_data[state].abbreviation=="PA"){
+                text(stateMeta_data[state].abbreviation, left, top+6);
+
+           } else if (stateMeta_data[state].senateLabel == "left"){
+                textAlign(RIGHT, TOP);
+                text(stateMeta_data[state].abbreviation, left - 3, top);
+
+            } else if (stateMeta_data[state].senateLabel == "right"){
+                textAlign(LEFT, TOP);
+                text(stateMeta_data[state].abbreviation, right + 4, top);
+
+            } else if(stateMeta_data[state].senateLabel=="bottom"){
+                textAlign(CENTER, TOP);
+                text(stateMeta_data[state].abbreviation, (left +right)/2, bottom+2);
+
+            } else {
+                textAlign(CENTER, BOTTOM);
+                fill(0);
+				noStroke();
+				textStyle(NORMAL);
+				textFont("Serif");
+				textSize(12)
+                text(stateMeta_data[state].abbreviation, (left + right) / 2, top - 1.5);
+            }
+        }
     }
 	
 	if (hovered) {
