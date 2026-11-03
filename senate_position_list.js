@@ -1,0 +1,41 @@
+let senate_list;
+let senate_position_list;
+
+senate_position_list = {
+    "Alabama": [mapWidth/1.525, mapHeight/1.51],
+    "Alaska": [mapWidth/7.2, mapHeight/1.18],
+    "Arkansas": [mapWidth/1.775, mapHeight/1.66],
+    "Colorado": [mapWidth/2.87, mapHeight/2.06],
+    "Delaware": [mapWidth/1.17, mapHeight/2],
+    "Florida": [mapWidth/1.353, mapHeight/1.24],
+    "Georgia": [mapWidth/1.41, mapHeight/1.51],
+    "Idaho": [mapWidth/4.81, mapHeight/2.8],
+    "Illinois": [mapWidth/1.625, mapHeight/2.25],
+    "Iowa": [mapWidth/1.775, mapHeight/2.],
+    "Kansas": [mapWidth/2.15, mapHeight/2],
+    "Kentucky": [mapWidth/1.47, mapHeight/1.89],
+    "Louisiana": [mapWidth/1.79, mapHeight/1.42],
+    "Maine": [mapWidth/1.056, mapHeight/3.4],
+    "Massachusetts": [mapWidth/1.1, mapHeight/2.6],
+    "Michigan": [mapWidth/1.47, mapHeight/2.8],
+    "Minnesota": [mapWidth/1.91, mapHeight/3.8],
+    "Mississippi": [mapWidth/1.64, mapHeight/1.53],
+    "Montana": [mapWidth/3.6, mapHeight/4],
+    "Nebraska": [mapWidth/2.26, mapHeight/2.44],
+    "New Hampshire": [mapWidth/1.105, mapHeight/2.85],
+    "New Jersey": [mapWidth/1.17, mapHeight/2.28],
+    "New Mexico": [mapWidth/2.93, mapHeight/1.65],
+    "North Carolina": [mapWidth/1.32, mapHeight/1.72],
+    "Ohio": [mapWidth/1.415, mapHeight/2.3],
+    "Oklahoma": [mapWidth/2.1, mapHeight/1.72],
+    "Oregon": [mapWidth/11, mapHeight/3],
+    "Rhode Island": [mapWidth/1.09, mapHeight/2.3],
+    "South Carolina": [mapWidth/1.35, mapHeight/1.59],
+    "South Dakota": [mapWidth/2.31, mapHeight/3.1],
+    "Tennessee": [mapWidth/1.54, mapHeight/1.734],
+    "Texas": [mapWidth/2.2, mapHeight/1.42],
+    "Virginia": [mapWidth/1.28, mapHeight/1.91],
+    "West Virginia": [mapWidth/1.325, mapHeight/2.03],
+    "Wyoming": [mapWidth/3.17, mapHeight/2.73]
+};
+
