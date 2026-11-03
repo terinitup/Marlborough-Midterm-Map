@@ -4,6 +4,7 @@ const allSenate = {};
 let creditbox;
 let tossupkey;
 let scoreboard;
+let toggle;
 
 
 function isDem(party){
@@ -45,6 +46,7 @@ function setup() {
   createDistricts();
   createSenate();
   creditbox = new CreditBox();
+  toggle = new Toggle();
   tossupkey = new TossupKey();
 
 }
@@ -100,6 +102,21 @@ function keyPressed() {
     mapMODE = "HOUSE";
   } else if (key === 's' || key === 'S') {
     mapMODE = "SENATE";
+  }
+  console.log("map mode:", mapMODE);
+}
+
+function mousePressed() {
+  let t = toggle;
+
+  if (mouseY > t.y && mouseY < t.y + t.h) {
+
+    if (mouseX > t.x && mouseX < t.x + t.w / 2) {
+      mapMODE = "HOUSE";                        
+    } else if (mouseX > t.x + t.w / 2 && mouseX < t.x + t.w) {
+      mapMODE = "SENATE";                     
+    }
+
   }
   console.log("map mode:", mapMODE);
 }
@@ -326,6 +343,7 @@ function draw() {
     }
     creditbox.display();
     tossupkey.display();
+    toggle.display();
 
     noStroke();
     textFont('Serif');
@@ -336,9 +354,9 @@ function draw() {
     fill(34, 34, 34);
     text('Results are as reported by The Associated Press at APNews.com', mapWidth - 10, mapHeight-10);
 
-    textAlign(RIGHT, BASELINE);
-    fill(34);
-    text('Press "H" and "S" to toggle between House and Senate views', mapWidth - 10, mapHeight/6.5);
+    //textAlign(RIGHT, BASELINE);
+   // fill(34);
+   // text('Press "H" and "S" to toggle between House and Senate views', mapWidth - 10, mapHeight/6.5);
 
 }
 

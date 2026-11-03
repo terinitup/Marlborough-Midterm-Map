@@ -10,12 +10,12 @@ class TossupKey{
 		
 		noStroke();
 		fill(255, 227, 87);
-		rect(mapWidth-160, 96, mapWidth/130, mapWidth/130);
+		rect(mapWidth-200, 146, mapWidth/130, mapWidth/130);
 
 		// label
 		fill(0);
 		textAlign(RIGHT, CENTER);
-		text(label, mapWidth-80, 100);
+		text(label, mapWidth-120, 150);
 
 		pop();
 
