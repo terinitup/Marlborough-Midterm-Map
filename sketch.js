@@ -1,6 +1,7 @@
 let districts = [];
 const allDistricts = {};
 let creditbox;
+let tossupkey;
 
 function isDem(party){
 	return party == "Democratic" || party == "DFL" || party == "Democratic-NPL";
@@ -33,6 +34,7 @@ function setup() {
   initRectangleList()
   createDistricts();
   creditbox = new CreditBox();
+  tossupkey = new TossupKey();
 
 }
 
@@ -223,6 +225,7 @@ textFont('Serif');
     let scoreboard = new ScoreBoard();
     scoreboard.display();
      creditbox.display();
+     tossupkey.display();
 }
 
 

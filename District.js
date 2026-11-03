@@ -15,6 +15,8 @@ class District {
         
         let w = getWinner(this.stateName, this.ID);
         let district = district_data[this.stateName][this.ID];
+        let isTossup = (district.tossup == "TRUE");
+
 
         if(w != -1){
 			this.fill = partyColor(district.candidates[w].party);
@@ -25,6 +27,22 @@ class District {
 		}
 		
 		fill(this.fill);
+		rect(this.position.x, this.position.y, this.size, this.size);
+		
+		if(isTossup && w != -1){
+			stroke(255, 227, 97);
+			strokeWeight(1.5);
+			
+			let x = this.position.x;
+            let y = this.position.y;
+            let s = this.size;
+
+            for (let c = 3; c < s * 2; c += 4){
+                line(x + max(0, c - s), y + min(c, s),
+                     x + min(c, s),     y + max(0, c - s));
+            }
+		}
+
 
     
 
@@ -32,12 +50,7 @@ class District {
             stroke(0);
             strokeWeight(1);
         }
-        rect(this.position.x, this.position.y, this.size, this.size);
-       // if (this.hover()){
-           // text(this.ID, this.position.x, this.position.y - 10);
-           // stroke(0);
-           // strokeWeight(2);
-	   // }
+       
     }
 
     hover(){
