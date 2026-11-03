@@ -31,7 +31,7 @@ class District {
 		
 		if(isTossup && w != -1){
 			stroke(255, 227, 97);
-			strokeWeight(1.5);
+			strokeWeight(1);
 			
 			let x = this.position.x;
             let y = this.position.y;
