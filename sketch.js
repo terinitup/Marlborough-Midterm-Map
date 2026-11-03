@@ -1,3 +1,20 @@
+const params = new URLSearchParams(window.location.search);
+const savedMode = params.get("mapMODE")?.toUpperCase();
+
+let mapMODE = savedMode === "HOUSE" || savedMode === "SENATE"
+    ? savedMode
+    : "HOUSE"; // default mode
+
+// Change mapMODE elsewhere in your code to "HOUSE" or "SENATE".
+
+setTimeout(() => {
+    params.set("mapMODE", mapMODE);
+
+    const query = params.toString();
+    window.location.href =
+        `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
+}, 5000);
+
 let districts = [];
 const allDistricts = {};
 const allSenate = {};
