@@ -1,8 +1,9 @@
 class District {
-    constructor(ID, stateName, mapPosition) {
+    constructor(ID, stateName, mapPosition, seatPosition) {
         this.ID = ID;
         this.stateName = stateName; 
         this.mapPosition = mapPosition;
+        this.seatPosition = seatPosition;
         this.position = mapPosition;
             this.size = mapWidth/130;
             this.fill = color(230);
@@ -10,20 +11,22 @@ class District {
     }
 
     display(){
+        // 
         noStroke();
         
         let w = getHouseWinner(this.stateName, this.ID);
         let district = district_data[this.stateName][this.ID];
-        let isTossup = (district.tossup == "TRUE");
+        let isTossup = district && district.tossup === "TRUE";
 
+        const candidate = Number.isInteger(w) ? district?.candidates?.[w] : undefined;
 
-        if(w != -1){
-			this.fill = partyColor(district.candidates[w].party);
-		 } else if (district.tossup == "TRUE"){
-            this.fill = color(255, 227, 87); 
-		}else{
-			this.fill = color(230);
-		}
+        if (candidate) {
+            this.fill = partyColor(candidate.party);
+        } else if (isTossup) {
+            this.fill = color(255, 227, 87);
+        } else {
+            this.fill = color(230);
+        }
 		
 		fill(this.fill);
 		rect(this.position.x, this.position.y, this.size, this.size);
@@ -42,6 +45,8 @@ class District {
             }
 		}
 
+
+    
 
         if(this.hover()){
             stroke(0);

@@ -4,7 +4,6 @@
   const centerX = mapWidth/2;
 	const fullBar = mapWidth;
 
-
 class ScoreBoard {
   
   constructor() {
@@ -33,6 +32,8 @@ class ScoreBoard {
 				this.iVotes++;
 			}
 		}
+
+    
 	}
 	    
 	this.demWidth = map(this.dVotes, 0, 435, 0, fullBar);
