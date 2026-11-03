@@ -497,7 +497,7 @@ const senate_data = {
     "candidates": [
       {
         "name": "Jeff Merkley",
-        "party": "Democratic/Working Families"
+        "party": "Democratic"
       },
       {
         "name": "David Brock Smith",
@@ -597,14 +597,6 @@ const senate_data = {
       },
       {
         "name": "Yoshi Matthews",
-        "party": "Independent"
-      },
-      {
-        "name": "David Sutman Jr.",
-        "party": "Independent"
-      },
-      {
-        "name": "Catherine Whitson",
         "party": "Independent"
       }
     ],
