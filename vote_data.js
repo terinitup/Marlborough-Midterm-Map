@@ -285,7 +285,7 @@ let vote_data = {
     },
     "Montana": {
         1: -1,
-        2: -1
+        2: 1
     },
     "Nebraska": {
         1: -1,
@@ -319,7 +319,7 @@ let vote_data = {
     "New Mexico": {
         1: -1,
         2: -1,
-        3: -1
+        3: 0
     },
     "New York": {
         1: -1,
@@ -515,9 +515,9 @@ let vote_data = {
         4: -1,
         5: -1,
         6: -1,
-        7: -1,
+        7: 0,
         8: -1,
-        9: -1,
+        9: 0,
         10: -1
     },
     "West Virginia": {
