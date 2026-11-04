@@ -290,7 +290,7 @@ let vote_data = {
     "Nebraska": {
         1: -1,
         2: -1,
-        3: -1
+        3: 1
     },
     "Nevada": {
         1: -1,
