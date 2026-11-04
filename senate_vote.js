@@ -23,7 +23,7 @@ let senate_vote = {
     "New Jersey": 0,
     "New Mexico": 0,
     "North Carolina": 0,
-    "Ohio": -1,
+    "Ohio": 0,
     "Oklahoma": 1,
     "Oregon": 0,
     "Rhode Island": 0,
