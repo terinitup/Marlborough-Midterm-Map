@@ -366,7 +366,7 @@ let vote_data = {
         14: -1
     },
     "North Dakota": {
-        1: 0
+        1: 1
     },
     "Ohio": {
         1: -1,
