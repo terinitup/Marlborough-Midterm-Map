@@ -522,7 +522,7 @@ let vote_data = {
     },
     "West Virginia": {
         1: 1,
-        2: -1
+        2: 1
     },
     "Wisconsin": {
         1: -1,
