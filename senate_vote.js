@@ -1,7 +1,7 @@
 let senate_vote = {
     "Alabama": -1,
     "Alaska": -1,
-    "Arkansas": -1,
+    "Arkansas": 1,
     "Colorado": 0,
     "Delaware": 0,
     "Florida": 1,
@@ -27,7 +27,7 @@ let senate_vote = {
     "Oklahoma": 1,
     "Oregon": -1,
     "Rhode Island": 0,
-    "South Carolina": -1,
+    "South Carolina": 0,
     "South Dakota": -1,
     "Tennessee": -1,
     "Texas": -1,
