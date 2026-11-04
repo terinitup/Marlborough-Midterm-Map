@@ -29,7 +29,7 @@ let senate_vote = {
     "Rhode Island": 0,
     "South Carolina": 0,
     "South Dakota": -1,
-    "Tennessee": -1,
+    "Tennessee": 1,
     "Texas": 0,
     "Virginia": 0,
     "West Virginia": 1,
