@@ -421,7 +421,7 @@ let vote_data = {
     },
     "Rhode Island": {
         1: 0,
-        2: -1
+        2: 0
     },
     "South Carolina": {
         1: -1,
