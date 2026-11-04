@@ -36,6 +36,7 @@ class SenateScoreBoard {
 	    
 	this.sDemWidth = map(this.sDVotes, 0, 100, 0, sFullBar);
 	this.sRepWidth = map(this.sRVotes, 0, 100, 0, sFullBar);
+    this.sIndWidth = map(this.sIVotes, 0, 100, 0, sFullBar);
 	this.sRepRectX = sFullBar - this.sRepWidth;
 
   }
@@ -81,6 +82,11 @@ class SenateScoreBoard {
 		// Republicans from the right
 		fill(232, 27, 35);
 		rect(this.sRepRectX, sRectY, this.sRepWidth, sRectH);
+
+        // Independents from Democrat bar
+        fill(255, 227, 97);
+        rect(this.sDemWidth, sRectY, this.sIndWidth, sRectH);
+		
 
 		// "51 to win" line and label
 		stroke(0);
