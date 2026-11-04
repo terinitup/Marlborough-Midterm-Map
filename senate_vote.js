@@ -10,7 +10,7 @@ let senate_vote = {
     "Illinois": 0,
     "Iowa": -1,
     "Kansas": -1,
-    "Kentucky": -1,
+    "Kentucky": 1,
     "Louisiana": -1,
     "Maine": -1,
     "Massachusetts": 0,
