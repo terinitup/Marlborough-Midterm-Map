@@ -228,7 +228,7 @@ let vote_data = {
         4: -1,
         5: -1,
         6: -1,
-        7: -1,
+        7: 0,
         8: 0
     },
     "Massachusetts": {
