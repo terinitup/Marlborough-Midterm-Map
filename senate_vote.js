@@ -19,7 +19,7 @@ let senate_vote = {
     "Mississippi": -1,
     "Montana": -1,
     "Nebraska": -1,
-    "New Hampshire": -1,
+    "New Hampshire": 0,
     "New Jersey": 0,
     "New Mexico": -1,
     "North Carolina": -1,
