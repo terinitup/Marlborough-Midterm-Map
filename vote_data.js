@@ -186,7 +186,7 @@ let vote_data = {
         5: -1,
         6: -1,
         7: 0,
-        8: -1,
+        8: 1,
         9: -1
     },
     "Iowa": {
@@ -299,7 +299,7 @@ let vote_data = {
         4: -1
     },
     "New Hampshire": {
-        1: -1,
+        1: o,
         2: -1
     },
     "New Jersey": {
