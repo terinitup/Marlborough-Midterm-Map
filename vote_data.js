@@ -103,7 +103,7 @@ let vote_data = {
         5: -1
     },
     "Delaware": {
-        1: -1
+        1: 0
     },
     "Florida": {
         1: 1,
