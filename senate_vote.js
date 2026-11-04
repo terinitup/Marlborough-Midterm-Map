@@ -1,5 +1,5 @@
 let senate_vote = {
-    "Alabama": -1,
+    "Alabama": 1,
     "Alaska": -1,
     "Arkansas": 1,
     "Colorado": 0,
