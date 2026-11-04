@@ -108,7 +108,7 @@ let vote_data = {
     "Florida": {
         1: -1,
         2: -1,
-        3: -1,
+        3: 1,
         4: -1,
         5: 1,
         6: 1,
@@ -420,7 +420,7 @@ let vote_data = {
         17: -1
     },
     "Rhode Island": {
-        1: -1,
+        1: 0,
         2: -1
     },
     "South Carolina": {
