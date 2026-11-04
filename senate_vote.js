@@ -32,6 +32,6 @@ let senate_vote = {
     "Tennessee": -1,
     "Texas": -1,
     "Virginia": 0,
-    "West Virginia": -1,
+    "West Virginia": 1,
     "Wyoming": -1   
 };
