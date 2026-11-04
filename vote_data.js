@@ -4,7 +4,7 @@ let vote_data = {
     // -1 = no decided winner yet
     "Alabama": {
         1: -1,
-        2: -1,
+        2: 0,
         3: 1,
         4: 1,
         5: -1,
