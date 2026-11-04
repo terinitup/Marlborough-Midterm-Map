@@ -3,7 +3,7 @@ let vote_data = {
     // 0 = first candidate, 1 = second, etc
     // -1 = no decided winner yet
     "Alabama": {
-        1: -1,
+        1: 1,
         2: 0,
         3: 1,
         4: 1,
