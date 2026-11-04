@@ -4,7 +4,7 @@ let senate_vote = {
     "Arkansas": -1,
     "Colorado": -1,
     "Delaware": 0,
-    "Florida": -1,
+    "Florida": 1,
     "Georgia": 0,
     "Idaho": -1,
     "Illinois": 0,
