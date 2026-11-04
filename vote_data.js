@@ -493,7 +493,7 @@ let vote_data = {
         4: -1
     },
     "Vermont": {
-        1: -1
+        1: 0
     },
     "Virginia": {
         1: -1,
